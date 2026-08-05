@@ -1,0 +1,31 @@
+# 抓取目标公司与官网招聘入口（阶段2 使用）
+# 值可为 URL 或关键词搜索链接；适配器会解析岗位列表页。
+official:
+  华为: "https://career.huawei.com/reccampportal/portal5/social-recruitment.html"
+  腾讯: "https://careers.tencent.com"
+  大疆: "https://we.dji.com/zh-CN/campus"
+  奥比中光: "https://job.orbbec.com.cn/campus"
+  禾赛: "https://kwh0jtf778.jobs.feishu.cn/229043/"
+  速腾聚创: "https://www.robosense.cn/"
+  优必选: "https://ubtrobot.zhiye.com/campus"
+  华测导航: "https://huace.zhiye.com"
+  数字绿土: "https://www.lidar360.com/"
+  中海达: "https://www.hi-target.com.cn/"
+  中科星图: "https://geovis.zhiye.com/"
+  虹软: "https://www.arcsoft.com.cn/job/JobList.html"
+  广联达: "http://campus.glodon.com"
+  中望软件: "https://www.zwsoft.cn/job/campus"
+  凡拓数创: "http://zhaopin.frontop.cn/"
+  拓竹: "https://bambulab.jobs.feishu.cn"
+  51WORLD: "https://www.51aes.com"
+  先临三维: "https://shining3d.zhiye.com"
+  梅卡曼德: "https://www.mech-mind.com/careers"
+  知象光电: "https://hr.revopoint3d.com.cn"
+
+# 招聘平台关键词搜索（P3，强反爬，需登录态）
+boss:
+  keywords: ["三维重建算法", "SLAM算法", "点云算法", "NeRF", "3DGS", "摄影测量", "GIS算法", "视觉SLAM"]
+  cities: ["深圳", "广州", "上海", "北京", "杭州", "武汉", "成都"]
+
+nowcoder:
+  keywords: ["三维重建", "SLAM", "点云", "NeRF", "3DGS", "GIS", "摄影测量"]

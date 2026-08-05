@@ -1,0 +1,9 @@
+# Render Blueprint —— 部署到 Render 云（免费 tier）的配置
+# 用法：在 Render 控制台 New → Blueprint，选择本仓库，Render 自动按此文件部署
+services:
+  - type: web
+    name: jobfinder-3d
+    runtime: python
+    plan: free
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "gunicorn server:app --bind 0.0.0.0:8000"

@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>3D 岗位检索 · 深大 GIS</title>
+<style>
+  :root{
+    --accent:#0b66c3; --bg:#f2f4f7; --card:#fff; --text:#1f2430; --muted:#667085;
+    --line:#e4e7ec; --hot:#16a34a; --warm:#d97706; --cool:#6b7280;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;font-family:"PingFang SC","Microsoft YaHei","Segoe UI",system-ui,sans-serif;
+    background:var(--bg);color:var(--text);line-height:1.6;font-size:14px;}
+  .topbar{background:#0f1b2d;color:#fff;position:sticky;top:0;z-index:50;
+    box-shadow:0 1px 4px rgba(0,0,0,.25)}
+  .topbar .inner{max-width:1400px;margin:0 auto;padding:14px 20px;
+    display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px}
+  .topbar h1{margin:0;font-size:18px;font-weight:700}
+  .topbar .sub{font-size:12px;color:#b9c4d6}
+  .topbar .stat{font-size:12.5px;background:#1d8cf0;padding:5px 12px;border-radius:20px;white-space:nowrap}
+  .top-ctl{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+  .top-ctl .btn{background:#1d8cf0;color:#fff;border:none;padding:7px 14px;border-radius:8px;
+    font-size:13px;cursor:pointer;font-family:inherit}
+  .top-ctl .btn:hover{opacity:.9}
+  .top-ctl .btn:disabled{opacity:.5;cursor:wait}
+  .refresh-status{font-size:12px;color:#b9c4d6;max-width:360px;line-height:1.4}
+  .refresh-status.err{color:#fca5a5}
+  .layout{display:grid;grid-template-columns:280px 1fr;gap:22px;max-width:1400px;margin:0 auto;padding:20px}
+  aside.filters{position:sticky;top:76px;align-self:start;background:var(--card);
+    border:1px solid var(--line);border-radius:12px;padding:16px;max-height:calc(100vh - 92px);overflow:auto}
+  aside.filters h4{margin:14px 0 8px;font-size:12.5px;color:var(--muted);letter-spacing:.5px}
+  aside.filters h4:first-child{margin-top:0}
+  #kw{width:100%;padding:8px 10px;border:1px solid var(--line);border-radius:8px;font-size:13.5px}
+  .chips{display:flex;flex-wrap:wrap;gap:6px}
+  .chip{border:1px solid var(--line);background:#fff;color:#3b4a63;padding:3px 10px;border-radius:16px;
+    font-size:12.5px;cursor:pointer;user-select:none;transition:all .12s}
+  .chip:hover{border-color:var(--accent);color:var(--accent)}
+  .chip.on{background:var(--accent);border-color:var(--accent);color:#fff}
+  .sal-row{display:flex;align-items:center;gap:8px;font-size:12.5px;color:var(--muted)}
+  input[type=range]{width:100%;accent-color:var(--accent)}
+  select#sortSel{width:100%;padding:7px 8px;border:1px solid var(--line);border-radius:8px;font-size:13px}
+  #resetBtn{width:100%;margin-top:14px;padding:9px;border:1px solid var(--line);border-radius:8px;
+    background:#f4f7fb;cursor:pointer;font-size:13.5px}
+  #resetBtn:hover{background:#eef3fb;color:var(--accent)}
+  main#results{display:flex;flex-direction:column;gap:12px;min-height:60vh}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px 16px;
+    box-shadow:0 1px 3px rgba(16,24,40,.05)}
+  .card .head{display:flex;justify-content:space-between;align-items:flex-start;gap:10px;flex-wrap:wrap}
+  .card h3{margin:0;font-size:15.5px;color:#12213c}
+  .card .company{font-size:12.5px;color:var(--accent);font-weight:600}
+  .card .match{font-size:12px;font-weight:700;padding:3px 10px;border-radius:14px;white-space:nowrap}
+  .match.hot{background:#dcfce7;color:var(--hot)}
+  .match.warm{background:#fef3c7;color:var(--warm)}
+  .match.cool{background:#f3f4f6;color:var(--cool)}
+  .card .meta{display:flex;flex-wrap:wrap;gap:6px;margin:8px 0 6px;font-size:12px}
+  .meta .city{background:#eef3fb;color:#1f3b63;padding:2px 8px;border-radius:10px}
+  .meta .pay{background:#fdf2e3;color:#b45309;padding:2px 8px;border-radius:10px;font-weight:600}
+  .meta .kind{background:#eef2f6;color:#445;padding:2px 8px;border-radius:10px}
+  .meta .fresh{background:#dcfce7;color:var(--hot);padding:2px 8px;border-radius:10px}
+  .tags{display:flex;flex-wrap:wrap;gap:5px;margin:6px 0}
+  .tag{font-size:11.5px;background:#f4f6fa;color:#5b6b82;border:1px solid var(--line);padding:1px 7px;border-radius:8px}
+  .card .req{font-size:12.5px;color:#3b4a63;margin:6px 0 0;display:-webkit-box;-webkit-line-clamp:2;
+    -webkit-box-orient:vertical;overflow:hidden}
+  .card .foot{display:flex;justify-content:space-between;align-items:center;margin-top:10px;gap:8px}
+  .card .src{font-size:11px;color:var(--muted)}
+  .btn{display:inline-block;background:var(--accent);color:#fff;padding:6px 16px;border-radius:8px;
+    text-decoration:none;font-size:13px}
+  .btn:hover{opacity:.9}
+  #empty{text-align:center;color:var(--muted);padding:60px 20px;font-size:15px}
+  #sentinel{height:1px}
+  @media (max-width:900px){
+    .layout{grid-template-columns:1fr;padding:12px}
+    aside.filters{position:static;max-height:none}
+  }
+  @media print{
+    .topbar{background:#fff;color:#000;position:static}
+    aside.filters,#sentinel{display:none!important}
+    .layout{grid-template-columns:1fr;padding:0}
+    .card{break-inside:avoid;box-shadow:none;border-color:#ccc}
+  }
+</style>
+</head>
+<body>
+<header class="topbar">
+  <div class="inner">
+    <div>
+      <h1>3D / 三维重建 / 点云 岗位检索</h1>
+      <div class="sub">基于个人专业画像（摄影测量·LiDAR点云·三维重建·GIS·城市AI）· 数据可刷新</div>
+    </div>
+    <div class="top-ctl">
+      <span class="stat" id="stat">加载中…</span>
+      <button id="refreshBtn" class="btn" title="从官网/牛客等数据源刷新岗位">🔄 刷新数据源</button>
+      <div class="refresh-status" id="refreshStatus"></div>
+    </div>
+  </div>
+</header>
+
+<div class="layout">
+  <aside class="filters">
+    <input id="kw" type="search" placeholder="关键词搜索，如 摄影测量 / CUDA / NeRF…" autocomplete="off">
+    <h4>📍 城市 / 地区</h4>
+    <div class="chips" id="cityChips"></div>
+    <h4>🧑‍🎓 工作经验</h4>
+    <div class="chips" id="expChips"></div>
+    <h4>💼 招聘类型</h4>
+    <div class="chips" id="hireChips"></div>
+    <h4>🏷 方向 / 技能</h4>
+    <div class="chips" id="tagChips"></div>
+    <h4>💰 薪资范围（K / 月）</h4>
+    <div class="sal-row"><span id="salLabel">0 - 100K</span></div>
+    <input type="range" id="salMin" min="0" max="100" value="0" step="1">
+    <input type="range" id="salMax" min="0" max="100" value="100" step="1">
+    <h4>↕ 排序</h4>
+    <select id="sortSel">
+      <option value="match">匹配度优先</option>
+      <option value="salary">薪资优先（年薪）</option>
+      <option value="gba">大湾区优先</option>
+      <option value="fresh">应届友好优先</option>
+    </select>
+    <button id="resetBtn">↺ 重置筛选</button>
+  </aside>
+
+  <main id="results"></main>
+  <div id="sentinel"></div>
+</div>
+
+<script>
+// ===== 内联数据（由 build_seed_jobs.py 生成 index.bundle.html 时填充；index.html 走 fetch）=====
+window.__JOBS_INLINE__ = null;
+
+const STATE = { data:null, filtered:[], page:0, pageSize:24, sort:'match' };
+const FILTERS = {
+  kw:'', cities:new Set(), exps:new Set(), hires:new Set(), tags:new Set(),
+  salMin:0, salMax:100
+};
+
+async function loadData(){
+  if (window.__JOBS_INLINE__) return window.__JOBS_INLINE__;
+  const res = await fetch('jobs.json', {cache:'no-store'});
+  if(!res.ok) throw new Error('无法加载 jobs.json（HTTP '+res.status+'）。请用 python -m http.server 打开，或使用 index.bundle.html');
+  return await res.json();
+}
+
+function chipGroup(el, values, onClick){
+  el.innerHTML='';
+  values.forEach(v=>{
+    const b=document.createElement('span');
+    b.className='chip'; b.textContent=v; b.dataset.v=v;
+    b.onclick=()=>{ b.classList.toggle('on'); onClick(); };
+    el.appendChild(b);
+  });
+}
+
+function initFilters(data){
+  // 城市 = 地区聚合 + 出现过的城市
+  const citySet=new Set(), tagSet=new Set();
+  data.jobs.forEach(j=>{ j.regions.forEach(r=>citySet.add(r)); j.cities.forEach(c=>citySet.add(c)); j.tags.forEach(t=>tagSet.add(t)); });
+  const regionOrder=['大湾区','长三角','京津冀','国内','海外','远程'];
+  const cities=[...regionOrder.filter(r=>citySet.has(r)), ...[...citySet].filter(c=>!regionOrder.includes(c))];
+  chipGroup(document.getElementById('cityChips'), cities, applyAndRender);
+  chipGroup(document.getElementById('expChips'), ['应届','实习','1-3年','3-5年','5年+','博士后','不限','应届友好'], applyAndRender);
+  chipGroup(document.getElementById('hireChips'), ['校招','实习','社招','博士后','管培','不限'], applyAndRender);
+  chipGroup(document.getElementById('tagChips'), [...tagSet], applyAndRender);
+  bindSalary();
+}
+
+function bindSalary(){
+  const elMin=document.getElementById('salMin'), elMax=document.getElementById('salMax');
+  const upd=()=>{
+    let lo=+elMin.value, hi=+elMax.value;
+    if(lo>hi){ [lo,hi]=[hi,lo]; elMin.value=lo; elMax.value=hi; }
+    FILTERS.salMin=lo; FILTERS.salMax=hi;
+    document.getElementById('salLabel').textContent=(lo==0?'':lo+'K - ')+(hi>=100?'':hi+'K')+' /月'+(lo==0&&hi>=100?'不限':'');
+    applyAndRender();
+  };
+  elMin.oninput=upd; elMax.oninput=upd;
+}
+
+function readFilters(){
+  const g=id=>document.getElementById(id);
+  FILTERS.kw=g('kw').value.trim().toLowerCase();
+  const grab=(id,set)=>{ const on=new Set(); document.querySelectorAll('#'+id+' .chip.on').forEach(b=>on.add(b.dataset.v)); set.clear(); on.forEach(x=>set.add(x)); };
+  grab('cityChips',FILTERS.cities); grab('expChips',FILTERS.exps);
+  grab('hireChips',FILTERS.hires); grab('tagChips',FILTERS.tags);
+  STATE.sort=g('sortSel').value;
+}
+
+function passesFilters(j){
+  // 关键词：title/company/要求/标签 全词 AND
+  if(FILTERS.kw){
+    const hay=(j.title+' '+j.company+' '+j.requirement_raw+' '+j.tags.join(' ')).toLowerCase();
+    if(!FILTERS.kw.split(/\s+/).every(k=>hay.includes(k))) return false;
+  }
+  // 城市：选中项 ∈ 岗位城市 ∪ 岗位地区
+  if(FILTERS.cities.size){
+    const set=new Set([...j.cities, ...j.regions]);
+    if(![...FILTERS.cities].some(c=>set.has(c))) return false;
+  }
+  // 招聘类型
+  if(FILTERS.hires.size && !FILTERS.hires.has(j.hire_type)) return false;
+  // 工作经验
+  if(FILTERS.exps.size){
+    const ok=[...FILTERS.exps].some(e=>{
+      if(e==='应届友好') return !!j.experience.is_fresh_friendly;
+      return e===j.experience.level;
+    });
+    if(!ok) return false;
+  }
+  // 标签：OR
+  if(FILTERS.tags.size && !j.tags.some(t=>FILTERS.tags.has(t))) return false;
+  // 薪资：无数值（未公开）放行；有数值才比较
+  const s=j.salary;
+  if(s && s.min_k!=null && s.max_k!=null){
+    if(s.max_k < FILTERS.salMin) return false;
+    if(s.min_k > FILTERS.salMax) return false;
+  }
+  return true;
+}
+
+function sortJobs(arr){
+  const p=j=>j.priority;
+  const cmp={
+    match:(a,b)=> p(b).match_score-p(a).match_score || p(a).tier-p(b).tier || p(b).size_tier-p(a).size_tier,
+    salary:(a,b)=> (b.salary.annual_k_max||0)-(a.salary.annual_k_max||0) || p(b).match_score-p(a).match_score,
+    gba:(a,b)=> p(a).tier-p(b).tier || p(b).match_score-p(a).match_score,
+    fresh:(a,b)=> (b.experience.is_fresh_friendly-a.experience.is_fresh_friendly) || p(b).match_score-p(a).match_score,
+  }[STATE.sort]||cmp.match;
+  return arr.slice().sort(cmp);
+}
+
+function applyAndRender(){
+  readFilters();
+  STATE.filtered=sortJobs(STATE.data.jobs.filter(passesFilters));
+  STATE.page=0;
+  const main=document.getElementById('results');
+  main.innerHTML='';
+  if(STATE.filtered.length===0){
+    main.innerHTML='<div id="empty">没有符合筛选条件的岗位，试试放宽筛选 🫥</div>';
+  } else {
+    renderNextPage();
+  }
+  updateStat();
+}
+
+function renderNextPage(){
+  const main=document.getElementById('results');
+  const slice=STATE.filtered.slice(STATE.page*STATE.pageSize,(STATE.page+1)*STATE.pageSize);
+  slice.forEach(j=>main.appendChild(renderCard(j)));
+  STATE.page++;
+}
+
+function esc(s){ return (s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;'); }
+
+function renderCard(j){
+  const c=document.createElement('article'); c.className='card';
+  const m=j.priority.match_score;
+  const cls=m>=80?'hot':(m>=60?'warm':'cool');
+  const salaryTxt=j.salary&&j.salary.min_k!=null
+    ? (j.salary.min_k+' - '+j.salary.max_k+'K/月'+(j.salary.months?'×'+j.salary.months:''))
+    : (j.salary_raw||'薪资未公开');
+  const cityHtml=j.cities.length?j.cities.map(esc).join(' · '):(j.regions.join(' · ')||'—');
+  const tagHtml=j.tags.slice(0,8).map(t=>'<span class="tag">'+esc(t)+'</span>').join('');
+  const reqShort=esc(j.requirement_raw||'无要求描述').slice(0,150);
+  const freshBadge=j.experience.is_fresh_friendly?'<span class="fresh">研一可投</span>':'';
+  const tierName=['大湾区','国内','海外'][j.priority.tier]||'';
+  c.innerHTML=
+    '<div class="head"><div>'+
+      '<h3>'+esc(j.title)+'</h3>'+
+      '<div class="company">'+esc(j.company)+' · '+esc(tierName)+' · '+esc(j.hire_type)+'</div>'+
+    '</div>'+
+    '<span class="match '+cls+'">匹配 '+m+'</span></div>'+
+    '<div class="meta">'+
+      '<span class="city">📍 '+cityHtml+'</span>'+
+      '<span class="pay">💰 '+esc(salaryTxt)+'</span>'+
+      '<span class="kind">🧑‍🎓 '+esc(j.experience.level||'不限')+'</span>'+
+      freshBadge+
+    '</div>'+
+    '<div class="tags">'+tagHtml+'</div>'+
+    '<p class="req">'+reqShort+(reqShort.length>=150?'…':'')+'</p>'+
+    '<div class="foot">'+
+      '<span class="src">来源：'+esc(j.source)+' · 更新 '+esc((j.last_seen||'').slice(0,10))+'</span>'+
+      (j.source_url?'<a class="btn" href="'+esc(j.source_url)+'" target="_blank" rel="noopener">'+esc(j.apply_text||'投递')+' ↗</a>':'<span></span>')+
+    '</div>';
+  return c;
+}
+
+function updateStat(){
+  const total=STATE.data.jobs.length;
+  document.getElementById('stat').textContent=
+    '共 '+total+' 条 · 命中 '+STATE.filtered.length+' · 更新 '+String(STATE.data.generated_at||'').slice(0,10);
+}
+
+function bindEvents(){
+  document.getElementById('kw').addEventListener('input', debounce(applyAndRender,200));
+  document.getElementById('sortSel').addEventListener('change', applyAndRender);
+  document.getElementById('refreshBtn').addEventListener('click', refreshData);
+  document.getElementById('resetBtn').addEventListener('click', ()=>{
+    document.getElementById('kw').value='';
+    document.querySelectorAll('.chip.on').forEach(c=>c.classList.remove('on'));
+    document.getElementById('salMin').value=0; document.getElementById('salMax').value=100;
+    document.getElementById('sortSel').value='match';
+    FILTERS.salMin=0; FILTERS.salMax=100;
+    document.getElementById('salLabel').textContent='0 - 100K /月';
+    applyAndRender();
+  });
+  new IntersectionObserver((es)=>{
+    if(es[0].isIntersecting && STATE.filtered.length>STATE.page*STATE.pageSize) renderNextPage();
+  },{rootMargin:'400px'}).observe(document.getElementById('sentinel'));
+}
+
+function debounce(fn,ms){ let t; return ()=>{ clearTimeout(t); t=setTimeout(fn,ms); }; }
+
+// ===== 刷新数据源（需 server.py 服务端）=====
+let ONLINE = false;
+
+async function detectBackend(){
+  const btn=document.getElementById('refreshBtn'), st=document.getElementById('refreshStatus');
+  try{
+    const r=await fetch('/api/health',{cache:'no-store'});
+    if(r.ok){ ONLINE=true; btn.style.display=''; st.textContent=''; }
+    else{ btn.style.display='none'; st.textContent='离线模式：需 python server.py 启动服务后才能刷新'; st.classList.add('err'); }
+  }catch(e){
+    btn.style.display='none';
+    st.textContent='离线模式：需 python server.py 启动服务后才能刷新'; st.classList.add('err');
+  }
+}
+
+async function refreshData(){
+  const btn=document.getElementById('refreshBtn'), st=document.getElementById('refreshStatus');
+  btn.disabled=true; st.classList.remove('err'); st.textContent='正在从网上刷新岗位数据…';
+  try{
+    const r=await fetch('/api/refresh',{method:'POST',cache:'no-store'});
+    if(!r.ok) throw new Error('刷新接口不可用（HTTP '+r.status+'）');
+    const t=setInterval(async()=>{
+      try{
+        const s=await (await fetch('/api/refresh/status',{cache:'no-store'})).json();
+        const errs=(s.errors&&s.errors.length)?('（'+s.errors.length+' 个源失败）'):'';
+        if(s.running){
+          st.textContent='刷新中… 本次新增 '+s.last_count+'，共 '+s.total+' 条'+errs;
+        }else{
+          clearInterval(t);
+          st.textContent='✅ 刷新完成 '+s.finished+' · 新增 '+s.last_count+' · 共 '+s.total+' 条'+errs;
+          btn.disabled=false;
+          await loadData();
+          initFilters(STATE.data);
+          applyAndRender();
+        }
+      }catch(e){
+        clearInterval(t); st.classList.add('err'); st.textContent='状态查询失败'; btn.disabled=false;
+      }
+    },2000);
+  }catch(e){
+    st.classList.add('err'); st.textContent='刷新失败：'+e.message; btn.disabled=false;
+  }
+}
+
+loadData().then(data=>{
+  STATE.data=data;
+  initFilters(data);
+  bindEvents();
+  applyAndRender();
+  detectBackend();
+}).catch(e=>{
+  document.getElementById('results').innerHTML='<div id="empty">'+esc(e.message)+'</div>';
+  document.getElementById('stat').textContent='加载失败';
+});
+</script>
+</body>
+</html>

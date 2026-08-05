@@ -1,0 +1,2130 @@
+{
+ "META": {
+  "华为": {
+   "gba": 1,
+   "size": 10,
+   "sal": 50,
+   "stars": 5,
+   "city": "深圳/杭州/上海/北京/西安",
+   "size_txt": "巨头",
+   "sal_txt": "车BU智驾24-50K×14",
+   "match": "★★★★★",
+   "core": "三维重建/3DGS算法、华为云EI 3D视觉、校招CV算法（深圳）"
+  },
+  "腾讯": {
+   "gba": 1,
+   "size": 10,
+   "sal": 50,
+   "stars": 4,
+   "city": "深圳/北京/上海",
+   "size_txt": "巨头",
+   "sal_txt": "算法2.5-5万/月",
+   "match": "★★★★",
+   "core": "混元3D大模型研究员、世界模型算法（深圳）"
+  },
+  "NVIDIA": {
+   "gba": 1,
+   "size": 10,
+   "sal": 100,
+   "stars": 4,
+   "city": "北京/上海/深圳",
+   "size_txt": "巨头",
+   "sal_txt": "中国区未公开（美区$224-431K）",
+   "match": "★★★★",
+   "core": "Neural Reconstruction实习（上海，深圳可投）、3D/4D重建（京沪深）"
+  },
+  "大疆": {
+   "gba": 1,
+   "size": 9,
+   "sal": 90,
+   "stars": 5,
+   "city": "深圳",
+   "size_txt": "约1.4万人",
+   "sal_txt": "高级三维重建60-90K×15",
+   "match": "★★★★★",
+   "core": "三维重建/数据重建算法、SLAM算法、2027届拓疆者校招（深圳）"
+  },
+  "丝路视觉": {
+   "gba": 1,
+   "size": 9,
+   "sal": 15,
+   "stars": 2,
+   "city": "深圳",
+   "size_txt": "2000-2500人",
+   "sal_txt": "UE5美术/三维设计10-15K",
+   "match": "★★",
+   "core": "UE5美术、C4D动态设计师（深圳）"
+  },
+  "奥比中光": {
+   "gba": 1,
+   "size": 8,
+   "sal": 40,
+   "stars": 5,
+   "city": "深圳",
+   "size_txt": "1000+人",
+   "sal_txt": "社招高级网格25-40K×14",
+   "match": "★★★★★",
+   "core": "点云处理/视觉SLAM/立体视觉算法（深圳，校招至10月底）"
+  },
+  "中望软件": {
+   "gba": 1,
+   "size": 8,
+   "sal": 25,
+   "stars": 3,
+   "city": "广州",
+   "size_txt": "上市",
+   "sal_txt": "几何算法20-25K×14",
+   "match": "★★★",
+   "core": "图形/几何算法工程师、算法研究员（广州）"
+  },
+  "凡拓数创": {
+   "gba": 1,
+   "size": 8,
+   "sal": 15,
+   "stars": 3,
+   "city": "广州",
+   "size_txt": "1100+人",
+   "sal_txt": "三维GIS管培生8-15K",
+   "match": "★★★",
+   "core": "具身智能仿真引擎、UE5数字孪生、三维GIS开发（广州）"
+  },
+  "拓竹科技": {
+   "gba": 1,
+   "size": 8,
+   "sal": 15,
+   "stars": 3,
+   "city": "深圳",
+   "size_txt": "全球3D打印龙头",
+   "sal_txt": "2027届校招10-15K/月",
+   "match": "★★★",
+   "core": "视觉算法（2027届提前批）、AI Agent算法实习（深圳）"
+  },
+  "51WORLD": {
+   "gba": 1,
+   "size": 7,
+   "sal": 55,
+   "stars": 5,
+   "city": "北京/深圳创新中心",
+   "size_txt": "500-1000人",
+   "sal_txt": "合成数据25-55K×13",
+   "match": "★★★★★",
+   "core": "AI算法实习（NeRF/3DGS）、远见计划管培（深圳有基地）"
+  },
+  "大势智慧": {
+   "gba": 1,
+   "size": 7,
+   "sal": 20,
+   "stars": 5,
+   "city": "武汉/深圳分公司",
+   "size_txt": "中型",
+   "sal_txt": "图像/SLAM 1.9-2万/月",
+   "match": "★★★★★",
+   "core": "CV/三维/SLAM算法、WebGIS开发（武汉，深圳有分部）"
+  },
+  "众趣科技": {
+   "gba": 1,
+   "size": 6,
+   "sal": 40,
+   "stars": 5,
+   "city": "北京/深圳分公司",
+   "size_txt": "中小型",
+   "sal_txt": "技术岗15K+（参考20-40K）",
+   "match": "★★★★★",
+   "core": "点云SLAM算法、全景拼接算法（北京总部，深圳有分部）"
+  },
+  "生境科技": {
+   "gba": 1,
+   "size": 5,
+   "sal": 50,
+   "stars": 4,
+   "city": "深圳南山",
+   "size_txt": "60余人",
+   "sal_txt": "AI算法20-50K×15薪",
+   "match": "★★★★",
+   "core": "AI算法（NeRF/3D Mesh）、VLA智能体（深圳南山）"
+  },
+  "百度": {
+   "gba": 0,
+   "size": 10,
+   "sal": 45,
+   "stars": 4,
+   "city": "北京",
+   "size_txt": "巨头",
+   "sal_txt": "SLAM/地图算法20-45K×16",
+   "match": "★★★★",
+   "core": "高精地图/SLAM/点云算法（北京，社招在招）"
+  },
+  "中科星图": {
+   "gba": 0,
+   "size": 9,
+   "sal": 50,
+   "stars": 4,
+   "city": "合肥/北京",
+   "size_txt": "上市",
+   "sal_txt": "三维视觉26-50K×15",
+   "match": "★★★★",
+   "core": "遥感三维视觉（NeRF）、三维视觉算法、低空视觉算法（合肥）"
+  },
+  "四维图新": {
+   "gba": 0,
+   "size": 9,
+   "sal": 50,
+   "stars": 4,
+   "city": "北京",
+   "size_txt": "上市",
+   "sal_txt": "高精地图25-50K",
+   "match": "★★★★",
+   "core": "点云重建算法实习生、高精地图算法（北京）"
+  },
+  "虹软": {
+   "gba": 0,
+   "size": 9,
+   "sal": 40,
+   "stars": 5,
+   "city": "杭州",
+   "size_txt": "上市",
+   "sal_txt": "三维视觉20K+（SP 40万/年）",
+   "match": "★★★★★",
+   "core": "三维视觉算法（27届秋招）、3D感知实习（杭州）"
+  },
+  "凌云光": {
+   "gba": 0,
+   "size": 9,
+   "sal": 35,
+   "stars": 4,
+   "city": "北京",
+   "size_txt": "1800-2000人",
+   "sal_txt": "3D视觉30-35K×15",
+   "match": "★★★★",
+   "core": "立体视觉算法、三维重建算法（北京，社招在招）"
+  },
+  "超图软件": {
+   "gba": 0,
+   "size": 9,
+   "sal": 30,
+   "stars": 4,
+   "city": "北京",
+   "size_txt": "上市",
+   "sal_txt": "GIS开发1.5-3万/月",
+   "match": "★★★★",
+   "core": "GIS高级开发（三维数字地球）、C++开发实习（北京）"
+  },
+  "航天宏图": {
+   "gba": 0,
+   "size": 9,
+   "sal": 25,
+   "stars": 5,
+   "city": "北京",
+   "size_txt": "3000+人",
+   "sal_txt": "遥感算法10-25K×12",
+   "match": "★★★★★",
+   "core": "遥感/AI算法工程师、博士后（三维智能重建，北京）"
+  },
+  "广联达": {
+   "gba": 0,
+   "size": 9,
+   "sal": 20,
+   "stars": 4,
+   "city": "北京/西安/上海",
+   "size_txt": "上市",
+   "sal_txt": "校招10-20K",
+   "match": "★★★★",
+   "core": "三维重建算法（2026届TOT）、三维图形渲染算法（北京/西安/上海）"
+  },
+  "VAST": {
+   "gba": 0,
+   "size": 8,
+   "sal": 60,
+   "stars": 3,
+   "city": "北京/杭州/上海",
+   "size_txt": "独角兽",
+   "sal_txt": "实习1000-2000元/日；校招30-60K×15-16",
+   "match": "★★★",
+   "core": "V-STAR实习、生成式AI研究员（北京/杭州/上海，研一最佳入口）"
+  },
+  "禾赛": {
+   "gba": 0,
+   "size": 8,
+   "sal": 50,
+   "stars": 5,
+   "city": "上海/杭州",
+   "size_txt": "上市龙头",
+   "sal_txt": "三维重建30-50K；点云感知20-40K×15",
+   "match": "★★★★★",
+   "core": "三维重建/点云感知算法（27届提前批截止8-31，上海/杭州）"
+  },
+  "Meshy": {
+   "gba": 0,
+   "size": 8,
+   "sal": 40,
+   "stars": 3,
+   "city": "上海/北京/深圳",
+   "size_txt": "独角兽",
+   "sal_txt": "社招几何30-40K；Intern 40-70万",
+   "match": "★★★",
+   "core": "生成式AI研究员、几何处理工程师（上海/北京/深圳）"
+  },
+  "铂力特": {
+   "gba": 0,
+   "size": 8,
+   "sal": 30,
+   "stars": 3,
+   "city": "西安",
+   "size_txt": "上市",
+   "sal_txt": "几何/切片18-30K",
+   "match": "★★★",
+   "core": "3D切片/几何/视觉图像算法（西安）"
+  },
+  "群核": {
+   "gba": 0,
+   "size": 7,
+   "sal": 60,
+   "stars": 4,
+   "city": "杭州",
+   "size_txt": "研发615人",
+   "sal_txt": "科研算法30-60K×14",
+   "match": "★★★★",
+   "core": "科研算法（3D重建/Neural Rendering/世界模型）、几何算法（杭州）"
+  },
+  "华曙高科": {
+   "gba": 0,
+   "size": 7,
+   "sal": 30,
+   "stars": 2,
+   "city": "长沙",
+   "size_txt": "750人",
+   "sal_txt": "算法15-30K",
+   "match": "★★",
+   "core": "算法工程师（长沙）"
+  },
+  "思看科技": {
+   "gba": 0,
+   "size": 7,
+   "sal": 25,
+   "stars": 4,
+   "city": "杭州",
+   "size_txt": "上市",
+   "sal_txt": "算法15-25K",
+   "match": "★★★★",
+   "core": "算法工程师实习（可转正）、全职（杭州，测控遥感优先）"
+  },
+  "魔珐科技": {
+   "gba": 0,
+   "size": 6,
+   "sal": 55,
+   "stars": 2,
+   "city": "上海",
+   "size_txt": "中型",
+   "sal_txt": "AI算法3.5-5.5万×16",
+   "match": "★★",
+   "core": "AI算法（AIGC 3D生成，上海）"
+  },
+  "数美万物": {
+   "gba": 0,
+   "size": 6,
+   "sal": 50,
+   "stars": 3,
+   "city": "北京",
+   "size_txt": "小型",
+   "sal_txt": "未公开（参考25-50K）",
+   "match": "★★★",
+   "core": "2D/3D AIGC算法岗（北京）"
+  },
+  "相芯科技": {
+   "gba": 0,
+   "size": 6,
+   "sal": 45,
+   "stars": 3,
+   "city": "杭州",
+   "size_txt": "150-500人",
+   "sal_txt": "图像算法25-45K",
+   "match": "★★★",
+   "core": "图像算法（2025历史岗，2026在招未核实，杭州）"
+  },
+  "中科深智": {
+   "gba": 0,
+   "size": 6,
+   "sal": 25,
+   "stars": 2,
+   "city": "北京",
+   "size_txt": "约120人",
+   "sal_txt": "未公开（参考25-45K）",
+   "match": "★★",
+   "core": "未检索到2026在招岗（北京）"
+  },
+  "叠境数字": {
+   "gba": 0,
+   "size": 5,
+   "sal": 45,
+   "stars": 5,
+   "city": "上海",
+   "size_txt": "小型",
+   "sal_txt": "未公开（参考25-45K）",
+   "match": "★★★★★",
+   "core": "三维重建/SLAM算法（上海，邮箱直投）"
+  },
+  "影眸科技": {
+   "gba": 0,
+   "size": 5,
+   "sal": 45,
+   "stars": 4,
+   "city": "上海",
+   "size_txt": "约60人",
+   "sal_txt": "历史校招10-25K（参考20-45K）",
+   "match": "★★★★",
+   "core": "未检索到2026公开算法岗（上海，3D生成）"
+  },
+  "Adobe": {
+   "gba": 0,
+   "size": 10,
+   "sal": 90,
+   "stars": 4,
+   "city": "美国",
+   "size_txt": "约3万人",
+   "sal_txt": "美区$142-313K/年",
+   "match": "★★★★",
+   "core": "2026 Research Intern（逆渲染/3D分析）、ML Engineer 3D重建"
+  },
+  "Unity": {
+   "gba": 0,
+   "size": 10,
+   "sal": 60,
+   "stars": 4,
+   "city": "美国/上海",
+   "size_txt": "巨头",
+   "sal_txt": "上海ML 20-60K×16",
+   "match": "★★★★",
+   "core": "上海ML Infrastructure、Unity中国2027届实习（CUDA）"
+  },
+  "Dassault": {
+   "gba": 0,
+   "size": 10,
+   "sal": 60,
+   "stars": 3,
+   "city": "法国/中国上海",
+   "size_txt": "巨头",
+   "sal_txt": "中国20-60K",
+   "match": "★★★",
+   "core": "几何建模C++软件工程师、Spatial计算几何（中国可问询）"
+  },
+  "Epic Games": {
+   "gba": 0,
+   "size": 10,
+   "sal": 50,
+   "stars": 3,
+   "city": "美国/上海",
+   "size_txt": "巨头",
+   "sal_txt": "中国未公开（美区$150-250K）",
+   "match": "★★★",
+   "core": "数字人研究工程师（苏黎世/伦敦）"
+  },
+  "Autodesk": {
+   "gba": 0,
+   "size": 9,
+   "sal": 50,
+   "stars": 5,
+   "city": "新加坡/波兰",
+   "size_txt": "约1.4万人",
+   "sal_txt": "上海Senior约60万/年",
+   "match": "★★★★★",
+   "core": "Reality Capture高级软件工程师（点云/mesh/摄影测量，新加坡/克拉科夫）"
+  },
+  "Luma AI": {
+   "gba": 0,
+   "size": 7,
+   "sal": 100,
+   "stars": 4,
+   "city": "美国/新加坡/远程",
+   "size_txt": "C轮40亿美元估值",
+   "sal_txt": "美区$200-450K",
+   "match": "★★★★",
+   "core": "World Model研究科学家（国际远程，中国可申）"
+  },
+  "Maxon": {
+   "gba": 0,
+   "size": 6,
+   "sal": 70,
+   "stars": 2,
+   "city": "德国",
+   "size_txt": "中型",
+   "sal_txt": "法兰克福€96-120K/年",
+   "match": "★★",
+   "core": "Senior Real-Time GPU Developer（渲染，法兰克福）"
+  },
+  "SideFX": {
+   "gba": 0,
+   "size": 6,
+   "sal": 65,
+   "stars": 3,
+   "city": "加拿大",
+   "size_txt": "中小型",
+   "sal_txt": "多伦多CA$80-135K/年",
+   "match": "★★★",
+   "core": "Senior Compositing Developer（C++/GPU，多伦多）"
+  },
+  "Blender基金会": {
+   "gba": 0,
+   "size": 4,
+   "sal": 20,
+   "stars": 2,
+   "city": "荷兰",
+   "size_txt": "数十人",
+   "sal_txt": "未公开（当前无开放职位）",
+   "match": "★★",
+   "core": "未检索到2026开放职位（可自发申请）"
+  },
+  "速腾聚创": {
+   "gba": 1,
+   "size": 8,
+   "sal": 55,
+   "stars": 5,
+   "city": "深圳",
+   "size_txt": "上市激光雷达龙头",
+   "sal_txt": "点云软件50-55K×13（参考）",
+   "match": "★★★★★",
+   "core": "信号及点云算法、SLAM与多传感器标定（深圳/上海）"
+  },
+  "镭神智能": {
+   "gba": 1,
+   "size": 7,
+   "sal": 40,
+   "stars": 5,
+   "city": "深圳宝安",
+   "size_txt": "激光雷达厂商",
+   "sal_txt": "点云算法约16-30K；算法类30-50万/年",
+   "match": "★★★★★",
+   "core": "点云算法（明确收摄影测量/GIS/遥感专业）、SLAM/多传感器融合"
+  },
+  "元戎启行": {
+   "gba": 1,
+   "size": 7,
+   "sal": 40,
+   "stars": 4,
+   "city": "深圳福田",
+   "size_txt": "自动驾驶公司",
+   "sal_txt": "校招20-50K×14-16",
+   "match": "★★★★",
+   "core": "地图定位SLAM、数据生成算法（NeRF/3DGS）"
+  },
+  "优必选": {
+   "gba": 1,
+   "size": 8,
+   "sal": 50,
+   "stars": 4,
+   "city": "深圳南山",
+   "size_txt": "上市人形机器人",
+   "sal_txt": "社招3D重建30-60K（参考）",
+   "match": "★★★★",
+   "core": "仿真与3D重建算法、视觉感知、视觉SLAM"
+  },
+  "云鲸智能": {
+   "gba": 1,
+   "size": 8,
+   "sal": 40,
+   "stars": 4,
+   "city": "深圳",
+   "size_txt": "独角兽（扫地机器人）",
+   "sal_txt": "校招未公开",
+   "match": "★★★★",
+   "core": "具身算法（实时重建）、SLAM算法（视觉/激光）"
+  },
+  "云天励飞": {
+   "gba": 1,
+   "size": 7,
+   "sal": 45,
+   "stars": 3,
+   "city": "深圳",
+   "size_txt": "上市AI公司",
+   "sal_txt": "研究员40-65K；校招16-24K",
+   "match": "★★★",
+   "core": "CV研究员（SLAM/三维重建）、AI算子开发"
+  },
+  "思谋科技": {
+   "gba": 1,
+   "size": 7,
+   "sal": 45,
+   "stars": 4,
+   "city": "深圳",
+   "size_txt": "工业3D视觉",
+   "sal_txt": "校招未公开；社招30-60K×14",
+   "match": "★★★★",
+   "core": "算法工程师（智能视觉）、CV算法（具身/EGO）"
+  },
+  "小鹏汇天": {
+   "gba": 1,
+   "size": 8,
+   "sal": 50,
+   "stars": 4,
+   "city": "广州",
+   "size_txt": "小鹏系飞行汽车",
+   "sal_txt": "感知算法42-83K（参考）",
+   "match": "★★★★",
+   "core": "感知算法（双目/3D重建）、地图融合算法、3D视觉实习"
+  },
+  "文远知行": {
+   "gba": 1,
+   "size": 8,
+   "sal": 45,
+   "stars": 4,
+   "city": "广州",
+   "size_txt": "上市自动驾驶",
+   "sal_txt": "校招约40-50K；社招25-65K×15",
+   "match": "★★★★",
+   "core": "算法工程师（SLAM/点云/传感器融合）、感知算法"
+  },
+  "亿航智能": {
+   "gba": 1,
+   "size": 7,
+   "sal": 25,
+   "stars": 4,
+   "city": "广州",
+   "size_txt": "上市eVTOL",
+   "sal_txt": "算法12.5-25K；组合导航18-25K",
+   "match": "★★★★",
+   "core": "算法工程师（点云/SLAM）、组合导航算法"
+  },
+  "极飞科技": {
+   "gba": 1,
+   "size": 8,
+   "sal": 30,
+   "stars": 5,
+   "city": "广州",
+   "size_txt": "上市农业无人机",
+   "sal_txt": "视觉算法12-40K×13",
+   "match": "★★★★★",
+   "core": "视觉算法（SFM/MVS/SLAM）、高级AI算法、航测"
+  },
+  "中海达": {
+   "gba": 1,
+   "size": 8,
+   "sal": 25,
+   "stars": 5,
+   "city": "广州",
+   "size_txt": "上市测绘/GNSS",
+   "sal_txt": "点云18-25K×14；三维重建20-30K×14",
+   "match": "★★★★★",
+   "core": "高级点云处理、三维重建算法、C++激光雷达点云"
+  },
+  "南方测绘": {
+   "gba": 1,
+   "size": 7,
+   "sal": 20,
+   "stars": 5,
+   "city": "广州",
+   "size_txt": "测绘装备龙头",
+   "sal_txt": "校招（激光/SLAM，已过窗口等秋招）",
+   "match": "★★★★★",
+   "core": "激光/SLAM算法工程师（2026校招）"
+  },
+  "飞渡科技": {
+   "gba": 1,
+   "size": 6,
+   "sal": 20,
+   "stars": 4,
+   "city": "北京/深圳",
+   "size_txt": "数字孪生（IDC第一）",
+   "sal_txt": "实习200-300元/天；GIS全栈13-22K",
+   "match": "★★★★",
+   "core": "研发助理、解决方案助理（GIS/三维空间）、GIS全栈开发"
+  },
+  "小马智行": {
+   "gba": 1,
+   "size": 8,
+   "sal": 45,
+   "stars": 4,
+   "city": "广州/深圳/北京",
+   "size_txt": "自动驾驶独角兽",
+   "sal_txt": "研发岗月薪2W+",
+   "match": "★★★★",
+   "core": "定位建图算法、感知算法、算法实习（深圳有研发中心）"
+  },
+  "数字绿土": {
+   "gba": 1,
+   "size": 7,
+   "sal": 30,
+   "stars": 5,
+   "city": "北京/深圳/武汉/成都",
+   "size_txt": "LiDAR360厂商",
+   "sal_txt": "校招算法25-35万/年；点云20-25K",
+   "match": "★★★★★",
+   "core": "3DGS三维重建、点云算法、SLAM算法（含深圳）"
+  },
+  "图达通": {
+   "gba": 0,
+   "size": 7,
+   "sal": 50,
+   "stars": 4,
+   "city": "苏州/深圳",
+   "size_txt": "激光雷达厂商",
+   "sal_txt": "点云35-65K×15",
+   "match": "★★★★",
+   "core": "激光雷达点云算法（苏州为主，深圳未核实）"
+  },
+  "华测导航": {
+   "gba": 0,
+   "size": 8,
+   "sal": 45,
+   "stars": 5,
+   "city": "上海",
+   "size_txt": "上市测绘导航",
+   "sal_txt": "3D点云25-50K×16",
+   "match": "★★★★★",
+   "core": "3D点云算法、SLAM算法、三维重建算法"
+  },
+  "高德/阿里": {
+   "gba": 0,
+   "size": 10,
+   "sal": 50,
+   "stars": 5,
+   "city": "北京/杭州",
+   "size_txt": "巨头（阿里）",
+   "sal_txt": "高德渲染建模25-50K；通义万相4-7万",
+   "match": "★★★★★",
+   "core": "高德三维重建建模工程师、通义万相多模态3D生成"
+  },
+  "字节/即梦": {
+   "gba": 0,
+   "size": 10,
+   "sal": 60,
+   "stars": 4,
+   "city": "北京/上海",
+   "size_txt": "巨头",
+   "sal_txt": "未公开（实习日薪约400-800元）",
+   "match": "★★★★",
+   "core": "3D视觉生成工程师（校招）、AIG3D算法、3D视觉实习"
+  },
+  "快手/可灵": {
+   "gba": 0,
+   "size": 10,
+   "sal": 45,
+   "stars": 3,
+   "city": "北京/深圳",
+   "size_txt": "巨头",
+   "sal_txt": "未公开",
+   "match": "★★★",
+   "core": "视频生成大模型算法（无独立3D岗，技能可迁移）"
+  },
+  "商汤科技": {
+   "gba": 0,
+   "size": 9,
+   "sal": 40,
+   "stars": 4,
+   "city": "上海/广州/深圳",
+   "size_txt": "上市AI公司",
+   "sal_txt": "3D生成20-40K×15",
+   "match": "★★★★",
+   "core": "3D生成算法研究员（3DGS/NeRF）、生成式重建研发"
+  },
+  "旷视科技": {
+   "gba": 0,
+   "size": 8,
+   "sal": 40,
+   "stars": 4,
+   "city": "北京",
+   "size_txt": "上市AI公司",
+   "sal_txt": "实习300-400元/天",
+   "match": "★★★★",
+   "core": "SLAM/三维重建算法研究员、算法实习"
+  },
+  "地平线": {
+   "gba": 0,
+   "size": 9,
+   "sal": 45,
+   "stars": 4,
+   "city": "北京/上海/深圳",
+   "size_txt": "上市智驾芯片",
+   "sal_txt": "校招硕士约30-60K",
+   "match": "★★★★",
+   "core": "端到端算法工程师、博士专项（视觉基模/世界模型）"
+  },
+  "毫末智行": {
+   "gba": 0,
+   "size": 7,
+   "sal": 40,
+   "stars": 4,
+   "city": "北京/上海",
+   "size_txt": "自动驾驶公司",
+   "sal_txt": "泊车SLAM 30-60K",
+   "match": "★★★★",
+   "core": "泊车SLAM算法专家、感知融合算法"
+  },
+  "智行者": {
+   "gba": 0,
+   "size": 6,
+   "sal": 25,
+   "stars": 3,
+   "city": "北京",
+   "size_txt": "自动驾驶公司",
+   "sal_txt": "感知算法16-25K",
+   "match": "★★★",
+   "core": "感知算法（含三维重建）、定位算法（SLAM）"
+  },
+  "先临三维": {
+   "gba": 0,
+   "size": 8,
+   "sal": 25,
+   "stars": 4,
+   "city": "杭州",
+   "size_txt": "上市3D扫描",
+   "sal_txt": "三维重建提前批15-19.9K",
+   "match": "★★★★",
+   "core": "三维重建算法（结构光）、SLAM算法、网格数据处理"
+  },
+  "知象光电": {
+   "gba": 0,
+   "size": 6,
+   "sal": 25,
+   "stars": 4,
+   "city": "西安",
+   "size_txt": "3D扫描（专精特新）",
+   "sal_txt": "算法15-25K",
+   "match": "★★★★",
+   "core": "算法工程师（三维重建）、点云后处理、SLAM"
+  },
+  "图漾科技": {
+   "gba": 0,
+   "size": 6,
+   "sal": 40,
+   "stars": 4,
+   "city": "上海",
+   "size_txt": "3D视觉AI50强",
+   "sal_txt": "工业视觉算法年薪15-40万",
+   "match": "★★★★",
+   "core": "工业视觉算法（3D点云）、视觉算法高级工程师"
+  },
+  "梅卡曼德": {
+   "gba": 0,
+   "size": 7,
+   "sal": 50,
+   "stars": 4,
+   "city": "北京",
+   "size_txt": "3D视觉机械臂",
+   "sal_txt": "3D视觉30-60K×14（官方）",
+   "match": "★★★★",
+   "core": "3D视觉算法（点云配准/位姿估计）、立体视觉算法"
+  },
+  "睿铂科技": {
+   "gba": 0,
+   "size": 5,
+   "sal": 35,
+   "stars": 4,
+   "city": "成都",
+   "size_txt": "倾斜摄影相机",
+   "sal_txt": "SLAM算法30-40K",
+   "match": "★★★★",
+   "core": "SLAM算法工程师（相机标定/ICP）"
+  },
+  "埃洛克": {
+   "gba": 0,
+   "size": 6,
+   "sal": 30,
+   "stars": 4,
+   "city": "北京",
+   "size_txt": "实景三维地图",
+   "sal_txt": "未公开",
+   "match": "★★★★",
+   "core": "未检索到2026明确算法岗（WebGL/Three.js）"
+  },
+  "天际航": {
+   "gba": 0,
+   "size": 5,
+   "sal": 20,
+   "stars": 5,
+   "city": "武汉",
+   "size_txt": "倾斜摄影/实景三维",
+   "sal_txt": "算法9-20K（参考）",
+   "match": "★★★★★",
+   "core": "算法工程师（摄影测量/SFM/SLAM/BA）"
+  },
+  "瞰景科技": {
+   "gba": 0,
+   "size": 5,
+   "sal": 60,
+   "stars": 5,
+   "city": "上海",
+   "size_txt": "Smart3D倾斜摄影",
+   "sal_txt": "三维重建高级算法30-80K（官方）",
+   "match": "★★★★★",
+   "core": "三维重建高级算法（SFM/空三/相机标定+3DGS）"
+  }
+ },
+ "POSITIONS": {
+  "华为": [
+   [
+    "三维重建/3DGS算法岗（社招）",
+    "深圳",
+    "20-40K×13（第三方参考）",
+    "3DGS/4DGS动态重建、SfM位姿、SLAM/MVS、深度估计、空间大模型VGGT；C++/Python/PyTorch",
+    "https://career.huawei.com"
+   ],
+   [
+    "华为云EI 3D视觉高级算法工程师",
+    "深圳/北京",
+    "未公开",
+    "硕士+，3D重建/视觉SLAM/3D点云分析、数字孪生优先；C/C++/Python、OpenCV/Eigen/Ceres/g2o",
+    "https://career.huawei.com"
+   ],
+   [
+    "2026届校招 AI工程师（计算机视觉方向）",
+    "深圳",
+    "15-30K×14（参考）",
+    "3D重建、图像超分、OCR、多目标跟踪；精通C++/Java/Python",
+    "https://www.nowcoder.com/jobs/detail/403333"
+   ]
+  ],
+  "腾讯": [
+   [
+    "混元3D场景生成与交互大模型研究员（TEG）",
+    "深圳",
+    "未公开",
+    "硕士+3年+，3D场景生成/重建大模型；熟悉Gaussian Splatting、3R、VGGT、MVS、SLAM",
+    "https://jobs.niuqizp.com/job-vw855Na5N.html"
+   ],
+   [
+    "腾讯游戏-多模态世界模型算法研究员（场景重建）",
+    "深圳",
+    "未公开",
+    "NeRF/3DGS、3R系列、VGGT、MVS、SLAM；博士优先、顶会一作优先",
+    "https://careers.tencent.com"
+   ],
+   [
+    "腾讯地图-自动化建图算法工程师",
+    "深圳/武汉/北京",
+    "未公开",
+    "激光雷达+相机+IMU+RTK多源融合建图；点云/图像配准、语义分割、矢量化；Delaunay/TIN加分",
+    "https://careers.tencent.com"
+   ]
+  ],
+  "NVIDIA": [
+   [
+    "Software Engineering Intern, Neural Reconstruction（Summer 2026）",
+    "上海（深圳走中国区实习池）",
+    "实习",
+    "在读硕/博；C++/Python/PyTorch；3DGS/NeRF/Gaussian Splatting；ROS/CUDA加分",
+    "https://nvidia.wd5.myworkdayjobs.com/en-US/NVIDIAExternalCareerSite/job/China-Shanghai/Software-Engineering-Intern--Neural-Reconstruction---Summer-2026_JR2010555"
+   ],
+   [
+    "Senior Software Engineer, 3D/4D Reconstruction",
+    "上海/北京/深圳",
+    "中国区未公开（美区$152-287K）",
+    "SfM、稠密重建、Gaussian Splatting、diffusion；5年+；自动驾驶3D/4D世界建模",
+    "https://jobs.anitab.org/companies/nvidia/jobs/72128855-senior-software-engineer-3d-4d-reconstruction"
+   ],
+   [
+    "PhysicalAI / Simulation Engineer",
+    "北京优先/上海/深圳",
+    "未公开",
+    "三维重建、通用世界模型、VLM/VLA、图形学与仿真；硕博、顶会加分",
+    "https://www.nvidia.com/en-us/about-nvidia/careers/"
+   ]
+  ],
+  "大疆": [
+   [
+    "计算机视觉算法工程师（三维建图/深度感知）",
+    "深圳",
+    "30-45K/月（参考，15薪）",
+    "多传感器深度、3D场景在线建图、点云、立体视觉、NeRF/3DGS、SLAM/重定位；C++/Python",
+    "https://www.nowcoder.com/jobs/detail/30300000145934"
+   ],
+   [
+    "中/高级计算机视觉算法工程师（三维重建·航测）",
+    "深圳南山",
+    "40-70K×15（第三方参考）",
+    "摄影测量/测绘遥感/地信专业优先；SfM/MVS、网格重建/修复/LOD、纹理贴图、PCL/CGAL/OpenMesh；CUDA加分",
+    "https://m.liepin.com/city-sz/zpswzjzssfgcsl51q/"
+   ],
+   [
+    "2027届“拓疆者”校招：SLAM算法工程师 / CV实习生",
+    "深圳/上海/北京",
+    "校招",
+    "视觉/LiDAR SLAM前后端、GTSAM/Ceres；3DGS/MAStR3、SFM/VIO、RoboMaster经历加分",
+    "https://we.dji.com"
+   ]
+  ],
+  "奥比中光": [
+   [
+    "点云处理算法工程师（校招）",
+    "深圳/杭州",
+    "未公开（参考16-24K）",
+    "点云分割/分类/地物特征提取/滤波；3D激光点云（融合视觉）目标检测/识别/跟踪",
+    "https://job.orbbec.com.cn/campus"
+   ],
+   [
+    "视觉SLAM算法工程师（校招）",
+    "深圳",
+    "未公开",
+    "视觉SLAM算法、3D视觉感知整体方案；机器人/消费电子场景",
+    "https://www.orbbec.com.cn"
+   ],
+   [
+    "立体视觉 / 3D视觉测量算法工程师（校招）",
+    "深圳南山",
+    "未公开（参考16-24K）",
+    "双目深度估计、结构光三维成像、三维测量系统设计",
+    "https://www.orbbec.com.cn/index/News/info.html?cate=31&id=336"
+   ]
+  ],
+  "中望软件": [
+   [
+    "图形算法工程师（2026届校招）",
+    "广州/武汉",
+    "约15K+（参考）",
+    "硕士+，计算机图形学、微分几何、计算几何、B样条曲线曲面；熟悉C/C++",
+    "https://www.zwsoft.cn/job/campus"
+   ],
+   [
+    "算法研究员（博士专项·2026届）",
+    "广州/武汉",
+    "未公开",
+    "计算几何、样条几何、有限元、数值优化、网格生成、CAM刀轨算法",
+    "https://www.zwsoft.cn/job/campus"
+   ],
+   [
+    "CAM算法工程师（2026届）",
+    "广州",
+    "未公开",
+    "CAM刀轨路径生成、数控后处理、3D打印路径规划",
+    "https://www.zwsoft.cn/job/campus"
+   ]
+  ],
+  "凡拓数创": [
+   [
+    "具身智能仿真引擎算法工程师（2027届校招）",
+    "广州",
+    "40-60万/年（参考）",
+    "硕士/博士；Linux/C++/Python/CMake；光线追踪或物理仿真（PBD/FEM/MPM）至少一个方向",
+    "https://campus.niuqizp.com/job-vrs5zaMnC.html"
+   ],
+   [
+    "UE5数字孪生开发工程师（社招）",
+    "广州",
+    "14-25K/月（参考）",
+    "本科+，C++/蓝图、UE4/UE5；接入GIS数据、IoT、BIM；数字孪生/智慧城市项目优先",
+    "http://zhaopin.frontop.cn/"
+   ],
+   [
+    "三维GIS开发管培生 / WebGL开发（WebGIS方向）",
+    "广州",
+    "WebGL 15-20K×13（参考）",
+    "本科+，计算机/GIS专业；WebGL、three.js、Cesium优先",
+    "http://zhaopin.frontop.cn/"
+   ]
+  ],
+  "拓竹科技": [
+   [
+    "视觉算法（2027届提前批）",
+    "深圳/上海",
+    "未公开（宣传匹配一线大厂+期权）",
+    "2027届应届生，本科友好；2026秋招提前批",
+    "https://bambulab.jobs.feishu.cn/s/zRK7D2h6BRw"
+   ],
+   [
+    "AI Agent算法工程师（暑期/日常实习）",
+    "深圳/上海",
+    "未公开",
+    "3D打印智能体（排障/打印质量优化）；Agent Skills、Multi-Agent、提示词工程",
+    "https://bambulab.jobs.feishu.cn"
+   ]
+  ],
+  "丝路视觉": [
+   [
+    "UE5美术",
+    "深圳福田",
+    "10-15K（参考）",
+    "大专/本科/硕士；UE5场景/道具/渲染；数字孪生/VR/多媒体；掌握AI工具",
+    "https://www.scfai.edu.cn/xsc/info/1015/18212.htm"
+   ],
+   [
+    "C4D动态设计师",
+    "深圳",
+    "10-15K（参考）",
+    "本科/硕士；C4D独立制作动态视频，会用RS、OC插件，熟悉AI工具",
+    "https://www.silkroadcg.com"
+   ]
+  ],
+  "51WORLD": [
+   [
+    "AI算法实习生（CV与三维重建方向，2026实习）",
+    "北京/上海现场",
+    "未公开",
+    "面向2027届在读；NeRF、3D Gaussian Splatting、大规模场景重建、多模态；Python/PyTorch",
+    "https://miami.joinhandshake.com/jobs/10992606/share_preview"
+   ],
+   [
+    "校招“远见计划”（管培生）",
+    "全国（深圳有创新中心）",
+    "宣传百万年薪",
+    "具身智能、物理AI、World Model、Sim2Real；C9及QS前50优先、顶会/开源优先",
+    "https://www.51aes.com"
+   ]
+  ],
+  "大势智慧": [
+   [
+    "CV/三维/SLAM算法工程师（2026届管培）",
+    "武汉总部",
+    "未公开（六险一金+奖金）",
+    "大规模实景三维重建、倾斜高斯泼溅(3D OPGS)、SLAM；武大测绘遥感背景",
+    "http://www.daspatial.com"
+   ],
+   [
+    "WebGIS/WebGL开发（2026届）",
+    "武汉",
+    "未公开",
+    "三维测绘软件（重建大师/模方/网格大师）方向",
+    "http://www.daspatial.com"
+   ]
+  ],
+  "众趣科技": [
+   [
+    "点云SLAM算法工程师",
+    "北京总部",
+    "未公开",
+    "点云SLAM/三维重建方向，全职",
+    "http://my.yingjiesheng.com/company_13076023.html"
+   ],
+   [
+    "全景拼接和图像处理算法工程师",
+    "北京总部",
+    "未公开",
+    "全景拼接/图像处理算法",
+    "http://my.yingjiesheng.com/company_13076023.html"
+   ]
+  ],
+  "生境科技": [
+   [
+    "AI算法工程师",
+    "深圳",
+    "20-50K×15薪（猎聘官方标注）",
+    "GAN/Diffusion/生成模型训练微调部署；加分：NeRF、3D Mesh语义分割、CLIP、Open3D、Unity/UE",
+    "https://www.liepin.com/job/1964510923.shtml"
+   ],
+   [
+    "AI算法工程师（VLA智能体方向）",
+    "深圳南山",
+    "25-45K/月（官方）",
+    "PyTorch/VLA；GPT-4V、BLIP2、ImageBind、SAM；scene graph embedding、向量数据库",
+    "zhuangzy@sengine.ai（邮箱投递）"
+   ]
+  ],
+  "百度": [
+   [
+    "高精地图算法工程师（J94999）",
+    "北京",
+    "面议（参考20-45K×15/16）",
+    "硕士+；点云/图像/SLAM一两个方向；C++/Python、PCL/OpenCV、Paddle/PyTorch",
+    "https://kunlunxin.zhiye.com/zpdetail/151094280"
+   ],
+   [
+    "SLAM算法工程师（高精地图方向，J99606）",
+    "北京",
+    "20-45K×15/16（参考）",
+    "硕士+2年；C++、PCL/Ceres；LIO/VIO、GeoTransformer/D3Feat点云特征匹配",
+    "https://kunlunxin.zhiye.com/xiangqing?jobId=151187905"
+   ],
+   [
+    "深度学习算法工程师（高精地图方向，J99607）",
+    "北京",
+    "20-45K×16（参考）",
+    "硕士+2年；PyTorch/TF；CV或点云处理基础；SLAM/三维重建项目优先",
+    "https://kunlunxin.zhiye.com/xiangqing?jobId=151188664"
+   ]
+  ],
+  "中科星图": [
+   [
+    "遥感三维视觉算法（社招）",
+    "合肥",
+    "12-24K（BOSS参考）",
+    "硕士；传统摄影测量 或 NeRF/Block-NeRF大场景神经渲染；多视角卫星/航空数据大场景重建",
+    "https://geovis.zhiye.com/"
+   ],
+   [
+    "三维视觉算法工程师（社招）",
+    "合肥/北京",
+    "26-50K×15薪（BOSS参考）",
+    "三维感知/重建/理解；多相机标定、运动捕捉、立体匹配、点云处理",
+    "https://geovis.zhiye.com/"
+   ],
+   [
+    "算法工程师（J13565，低空无人机视觉）",
+    "合肥/北京",
+    "面议",
+    "PyTorch、TensorRT/模型压缩；三维重建、目标检测、运动估计、场景理解",
+    "https://geovis.zhiye.com/job/detail?jobAdId=9d6185d4-42ab-4895-9557-7fa8911e7938"
+   ]
+  ],
+  "四维图新": [
+   [
+    "点云重建算法实习生（J12424）",
+    "北京海淀",
+    "7-10K（参考）",
+    "硕士在读；ORB-SLAM/VINS/Cartographer/LOAM；Open3D/PCL/OpenCV；KF/EKF；C++/Python",
+    "https://cy3.ncss.cn/student/jobs/NaCcXwKhxuYMFaST9Jz9TM/detail.html"
+   ],
+   [
+    "高精地图算法工程师",
+    "北京",
+    "25-50K（报告参考）",
+    "高精地图、点云重建、多传感器融合定位、SLAM",
+    "https://www.seewayai.com"
+   ]
+  ],
+  "虹软": [
+   [
+    "三维视觉算法工程师（27届秋招）",
+    "杭州/上海/南京",
+    "20K+（参考）",
+    "硕士+；多视图几何、立体视觉、点云处理、非线性优化；OpenCV/PCL/Open3D/Ceres/g2o；PyTorch",
+    "https://www.arcsoft.com.cn/job/JobList.html"
+   ],
+   [
+    "3D感知算法工程师（27届实习，可转正）",
+    "杭州/上海/南京",
+    "面议（参考4-10K）",
+    "3D视觉、点云处理、多模态感知；明确要求了解NeRF、3DGS；BEV/OCC/位姿估计优先",
+    "https://www.arcsoft.com.cn/job/JobList.html"
+   ]
+  ],
+  "凌云光": [
+   [
+    "立体视觉算法工程师（社招）",
+    "北京石景山",
+    "2-3万/月（参考）",
+    "硕士+；C++；三维几何、匹配优化、空间约束、误差求解；PyTorch",
+    "https://www.quanzhi.com/job/6a4d39f662f6005b2b08228c"
+   ],
+   [
+    "三维重建算法工程师（社招）",
+    "北京",
+    "20-40K（猎聘参考）",
+    "3D视觉方向，硕士+",
+    "https://app.mokahr.com/m/social-recruitment/lusterinc/46991"
+   ],
+   [
+    "视觉算法开发工程师（深度学习）",
+    "北京石景山",
+    "2-4万/月（参考）",
+    "人体/人脸检测、姿态估计、单视图3D重构",
+    "https://www.quanzhi.com/job/6a573ced62f6005b2b1a15e2"
+   ]
+  ],
+  "超图软件": [
+   [
+    "GIS高级开发工程师（三维数字地球）",
+    "北京朝阳/西安/武汉",
+    "1.5-3万/月（参考）",
+    "2年+C++/QT；三维数字地球或二维电子海图GIS系统开发；S57/S100优先",
+    "http://cn.supermap.com"
+   ],
+   [
+    "C++开发实习生（官方校招）",
+    "北京朝阳",
+    "未公开",
+    "GIS方向，官方校园渠道",
+    "http://www.giscontest.com/cn/school.html"
+   ]
+  ],
+  "航天宏图": [
+   [
+    "遥感算法工程师（社招）",
+    "北京",
+    "10-25K×12（牛客参考）",
+    "硕士；遥感图像处理、解译、算法反演；C/C++/IDL/Python；卫星遥感产品或GIS开发优先",
+    "https://www.nowcoder.com/jobs/detail/150381"
+   ],
+   [
+    "AI算法工程师（社招）",
+    "北京",
+    "10-25K×12（牛客参考）",
+    "硕士/博士+2年；Python/C++；CNN/RNN、TensorFlow；遥感深度学习分类解译",
+    "https://www.nowcoder.com/jobs/detail/155066"
+   ],
+   [
+    "博士后研究员（三维智能重建方向）",
+    "北京",
+    "30-35K×12（牛客参考）",
+    "博士，35岁以下；点云/倾斜影像/全景照片多源融合、一体化三维智能重建、实时摄影测量",
+    "https://www.nowcoder.com/jobs/detail/186739"
+   ]
+  ],
+  "广联达": [
+   [
+    "三维重建算法工程师（2026届校招TOT/博士计划）",
+    "北京/西安/上海",
+    "未公开（25届参考2-4万×14）",
+    "硕士+；C++；具备三维重建处理能力；计算机/数学/GIS/建筑相关专业",
+    "http://campus.glodon.com"
+   ],
+   [
+    "三维图形渲染算法工程师（2026届校招TOT）",
+    "北京/西安/上海",
+    "未公开（25届参考2-4万×14）",
+    "硕士+；计算机图形学；渲染引擎、三维重建、VR/AR、图形+AI；C++",
+    "http://campus.glodon.com"
+   ]
+  ],
+  "VAST": [
+   [
+    "V-STAR 实习（面向2027及以后毕业）",
+    "北京/杭州/上海/远程",
+    "1000-2000元/日（官方）",
+    "3D大模型研究；顶会/强工程能力优先；研一最佳入口",
+    "https://a9ihi0un9c.jobs.feishu.cn/s/fOLPnagid2A"
+   ],
+   [
+    "生成式AI研究员 / 算法工程师（V-STAR计划·校招）",
+    "北京/杭州/上海",
+    "超越顶尖大厂+期权",
+    "2026-12前毕业；顶会一作优先；CV/图形学/生成模型/多模态",
+    "https://a9ihi0un9c.jobs.feishu.cn/campus"
+   ]
+  ],
+  "禾赛": [
+   [
+    "计算机视觉算法工程师（三维重建·空间智能方向）",
+    "上海/杭州",
+    "行业TOP+奖金股票",
+    "MVS、位姿/深度估计、双目立体视觉；NeRF、Gaussian Splatting重建渲染；测绘专业优先",
+    "https://kwh0jtf778.jobs.feishu.cn/229043/"
+   ],
+   [
+    "点云感知算法工程师（雷达研发方向）",
+    "上海/杭州",
+    "30-50K（职友集参考）",
+    "点云检测/分割/分类/跟踪；轻量级模型、量化压缩；C/C++/Python、TensorFlow/PyTorch",
+    "https://kwh0jtf778.jobs.feishu.cn/"
+   ],
+   [
+    "Infra算法工程师（三维重建方向）",
+    "上海/杭州",
+    "校招提前批",
+    "3D重建与4D生成AI平台基础设施/数据算法（27届提前批截止2026-08-31）",
+    "https://campus.niuqizp.com/schedule-7ks85Cznz.html"
+   ]
+  ],
+  "Meshy": [
+   [
+    "生成式AI研究员（3D/图形学）",
+    "上海/北京/深圳",
+    "Intern 40-70万（报告）",
+    "扩散/流匹配/自回归3D生成、3D Tokenizer；顶会论文优先",
+    "https://campus.niuqizp.com/job-vYk5Ztaat.html"
+   ],
+   [
+    "几何处理工程师",
+    "上海/北京/深圳",
+    "30-40K（报告参考）",
+    "网格简化/重网格化、计算几何；PyTorch",
+    "https://campus.niuqizp.com/job-vYk5Ztaat.html"
+   ]
+  ],
+  "铂力特": [
+   [
+    "3D切片算法工程师",
+    "西安",
+    "未公开",
+    "本科+数学；C/MATLAB精通；3年+CAD算法；计算几何及解析几何",
+    "https://cangzhou.jrzp.com/job2459550.shtml"
+   ],
+   [
+    "视觉图像算法工程师",
+    "西安",
+    "20-30K×13（参考）",
+    "C++、Python/MATLAB；工业视觉硬件与算法；传统+深度学习视觉算法",
+    "https://www.jrzp.com/job1476967121.shtml"
+   ]
+  ],
+  "群核": [
+   [
+    "科研算法工程师（Neural Rendering方向）",
+    "杭州",
+    "30K+（参考）",
+    "3D高斯场景重建与渲染、NeRF、可微渲染、真实感渲染",
+    "https://app.mokahr.com/recommendation-apply/qunhemail/2834"
+   ],
+   [
+    "科研算法工程师（图形3D重建与生成方向）",
+    "杭州",
+    "20K+（参考）",
+    "单物体/场景级3D重建（几何+外观）、文本/图像/视频到3D生成",
+    "https://app.mokahr.com/recommendation-apply/qunhemail/2834"
+   ],
+   [
+    "几何算法工程师",
+    "杭州",
+    "应届20-30K×14（报告）",
+    "C++/Java/Python；多边形/实体建模、网格处理、AI+几何建模",
+    "https://app.mokahr.com/recommendation-apply/qunhemail/2834"
+   ]
+  ],
+  "华曙高科": [
+   [
+    "算法工程师",
+    "长沙",
+    "15-30K（报告参考）",
+    "3D打印设备/软件算法（金属SLM+高分子SLS）",
+    "https://www.farsoon-cn.com/join/"
+   ]
+  ],
+  "思看科技": [
+   [
+    "算法工程师（实习，考核可转正）",
+    "杭州余杭",
+    "6-8K（官方校招公告）",
+    "硕士+（优秀可本科）；C/C++、OpenCV、MATLAB/Python；双目视觉、光学、视觉测量、3D传感器优先；测控遥感专业优先",
+    "https://www.career.zju.edu.cn/jyxt/sczp/zpztgl/ckZpgwXq.zf?zpxxbh=39A508F44A4E9759E0653A68DD0E9B18"
+   ],
+   [
+    "算法工程师（全职）",
+    "杭州余杭",
+    "15-25K（参考）",
+    "图像、视觉方向算法设计/仿真/验证/优化与封装",
+    "https://www.51shuobo.com/city/job_277515676.html"
+   ]
+  ],
+  "魔珐科技": [
+   [
+    "AI算法工程师（AIGC方向）",
+    "上海徐汇",
+    "未公开（报告3.5-5.5万×16）",
+    "硕士+；线性代数、优化方法、统计；Python/PyTorch；语音/动画合成落地加分",
+    "https://wanmayoucai.com/jobDetail/271169317410713600"
+   ]
+  ],
+  "数美万物": [
+   [
+    "2D/3D AIGC算法岗（工作/实习均可）",
+    "北京",
+    "未公开（报告参考25-50K）",
+    "扩散/3D原生生成、NeRF/3DGS、3D VAE/稀疏卷积、图生3D+3D打印工作流",
+    "https://www.hi3d.ai/zh"
+   ]
+  ],
+  "相芯科技": [
+   [
+    "图像算法工程师（2025历史岗，2026在招未核实）",
+    "杭州",
+    "25-45K（参考）",
+    "C/C++/Python/Matlab、OpenCV；ISP图像算法加分",
+    "https://www.lagou.com/wn/jobs/10724771.html"
+   ]
+  ],
+  "中科深智": [
+   [
+    "未检索到2024-2026公开在招岗位",
+    "北京",
+    "—",
+    "历史2021年招算法/开发；建议关注官网",
+    "https://www.deepscience.cn"
+   ]
+  ],
+  "叠境数字": [
+   [
+    "三维重建/SLAM算法工程师（官网常年有效）",
+    "上海",
+    "未公开（报告参考25-45K）",
+    "C++、CV/CG、三维重建/SLAM优先、CUDA/OpenCL加分、光场",
+    "https://www.dgene.com/"
+   ]
+  ],
+  "影眸科技": [
+   [
+    "未检索到2026公开算法在招岗",
+    "上海",
+    "实习日薪500（小红书参考）",
+    "3D生成+图形学方向；建议关注官网/公众号，上科大体系内推最有效",
+    "https://hyper3d.ai/"
+   ]
+  ],
+  "Adobe": [
+   [
+    "2026 Intern – Research Scientist / Engineer",
+    "旧金山/伦敦",
+    "$45-61/小时（已核实）",
+    "在读PhD/Master；3D分析、逆渲染（NeRF/3DGS）、CG/CV、生成式模型",
+    "https://www.ziprecruiter.com/c/Adobe/Job/2026-Intern-Research-Scientist-Engineer/-in-San-Francisco,CA"
+   ],
+   [
+    "ML Engineer 5（3D重建管线）",
+    "美国",
+    "$170-280K（报告）",
+    "NeRF/3DGS/Point-E、3D重建管线",
+    "https://careers.adobe.com"
+   ]
+  ],
+  "Unity": [
+   [
+    "Staff/Senior ML Engineer, ML Infrastructure（上海）",
+    "上海",
+    "未公开（报告20-60K×16）",
+    "PyTorch、NVIDIA Triton、TorchServe、Ray、Kubernetes；在线推理平台",
+    "https://www.postjobfree.com/job/b34tya/staff-machine-learning-ml-shanghai-china"
+   ],
+   [
+    "AI Infrastructure Intern（Unity中国2027届）",
+    "上海徐汇",
+    "未公开",
+    "TensorFlow/PyTorch、TensorRT-LLM、CUDA编程（TensorRT/Cutlass/cuDNN）、Transformer优化",
+    "https://recruiting.unity.cn"
+   ]
+  ],
+  "Dassault": [
+   [
+    "Software Engineer – Geometric Modeling（ENOVIA）",
+    "印度浦那",
+    "未公开",
+    "C++/Java/JavaScript/Python；3D几何建模、blending/stitching；3-6年经验",
+    "https://www.3ds.com/zh-hans/careers/jobs/software-engineer-geometric-modeling-546398"
+   ],
+   [
+    "Spatial 计算几何岗（中国可问询）",
+    "中国",
+    "未公开",
+    "C++/C#、计算几何、3D ACIS/CGM内核；邮箱 hr_spatial@3ds.com",
+    "https://www.spatial.com/company/Careers"
+   ]
+  ],
+  "Epic Games": [
+   [
+    "Research Engineer – Digital Human Research",
+    "瑞士苏黎世",
+    "未公开",
+    "3D重建与建模、人脸/人体捕获、生成式模型、神经渲染；Master/PhD",
+    "https://www.epicgames.com/site/en-US/careers"
+   ],
+   [
+    "Research Engineer – Neural Rendering",
+    "英国伦敦",
+    "未公开",
+    "神经渲染、可微渲染、image-to-image；基于3D/4D扫描数字人",
+    "https://www.epicgames.com/site/en-US/careers"
+   ]
+  ],
+  "Autodesk": [
+   [
+    "Senior Software Engineer – Reality Capture（Req 26WD95990）",
+    "波兰克拉科夫（hybrid）",
+    "未公开",
+    "C++17/C#；大规模点云处理、mesh生成、自动特征提取、BIM集成；OpenGL/Direct3D/Vulkan",
+    "https://careers.uw.edu/jobs/autodesk-senior-software-engineer-37/"
+   ],
+   [
+    "Reality Capture 质量/可靠性岗（Req 26WD98420）",
+    "新加坡",
+    "未公开",
+    "点云处理、网格生成、特征提取；Revit/Civil 3D/AutoCAD集成",
+    "https://autodesk.wd1.myworkdayjobs.com"
+   ]
+  ],
+  "Luma AI": [
+   [
+    "Research Scientist – World Model",
+    "远程/旧金山/新加坡",
+    "$250-450K（已核实）",
+    "PhD或强研究履历；world model架构、diffusion/transformer/自回归；强PyTorch",
+    "https://lumalabs.ai/careers"
+   ],
+   [
+    "Simulation Researcher/Engineer",
+    "新加坡（remote/hybrid）",
+    "$250-450K（已核实）",
+    "生成式rollout与物理引擎（Isaac Sim/MuJoCo/Bullet）、sim-to-real、Python+C++",
+    "https://builtinsingapore.com/job/simulation-researcher-engineer/9571317"
+   ]
+  ],
+  "Maxon": [
+   [
+    "Senior Real-Time GPU Developer",
+    "德国法兰克福",
+    "€96-120K/年（Glassdoor核实）",
+    "实时光追/路径追踪/全局光照、visibility buffer、实时降噪；3年+C++；Metal/DX12/Vulkan",
+    "https://www.glassdoor.de/job-listing/senior-real-time-gpu-developer-mfd-maxon-computer-JV_IC2632180_KO0,34_KE35,49.htm?jl=1010102956285"
+   ],
+   [
+    "Senior Software Developer – Redshift CAD/BIM",
+    "德国法兰克福",
+    "约€120K/年（参考）",
+    "专家级C++；Redshift接入CAD/BIM宿主（Vectorworks/Revit/ArchiCAD）",
+    "https://www.wearedevelopers.com/jobs/ext/7137732/senior-software-developer-redshift-for-archviz"
+   ]
+  ],
+  "SideFX": [
+   [
+    "Senior Compositing Software Developer / TD",
+    "加拿大多伦多（hybrid）",
+    "$150-185K CAD/年（已核实）",
+    "强C++多线程；OpenCL/CUDA/Vulkan计算API；图像算法CPU/GPU优化；Copernicus架构",
+    "https://ca.talent.com/fr/view?id=f98e3584994e"
+   ]
+  ],
+  "Blender基金会": [
+   [
+    "未检索到2026开放职位（可自发申请）",
+    "荷兰（远程合同制）",
+    "—",
+    "官方建议无空缺时自发申请至 jobs@blender.org",
+    "https://www.blender.org/jobs/"
+   ]
+  ],
+  "速腾聚创": [
+   [
+    "信号及点云算法工程师（2026届校招）",
+    "深圳/上海",
+    "校招未公开（参考25-40K×13）",
+    "C/C++与Python、PCL/OpenCV；点云滤波/分割/特征提取、SfM/SLAM基础；PyTorch/TF",
+    "https://campus.niuqizp.com/job-vsm5tattM.html"
+   ],
+   [
+    "SLAM及多传感器融合标定算法工程师（2026届）",
+    "深圳/上海",
+    "校招未公开",
+    "SLAM算法与多传感器融合标定；激光雷达点云与相机标定；自动驾驶/机器人背景优先",
+    "https://www.xiaohongshu.com/discovery/item/68f9f2d600000000040010e8"
+   ],
+   [
+    "软件算法开发工程师（点云方向，社招）",
+    "深圳",
+    "50-55K×13（参考）",
+    "LiDAR点云前后处理算法；精通C/C++；SIMD/CUDA/OpenCL并行加速",
+    "https://www.quanzhi.com/job/68680e1c91a306c224d9fcb3"
+   ]
+  ],
+  "镭神智能": [
+   [
+    "点云算法工程师（含应届）",
+    "深圳宝安",
+    "约16-30K/月（官方）；算法类30-50万/年",
+    "LiDAR点云预处理/标定/分割/过滤；PCL+深度学习目标检测跟踪；SFM/SLAM/三维重建；摄影测量/GIS/遥感专业明确对口",
+    "https://jobs.51job.com/shenzhen-baq/168362337.html"
+   ],
+   [
+    "算法类工程师（SLAM/点云深度学习/多传感器融合）",
+    "深圳宝安",
+    "约30-50万/年（官方）",
+    "C/C++精通、PCL/OpenCV/Open3D、ROS；视觉SLAM或激光SLAM经验优先；硕士+",
+    "http://it.job1001.com/mobile/jobdetail_53626372.htm"
+   ]
+  ],
+  "元戎启行": [
+   [
+    "地图定位算法工程师（2026春招）",
+    "深圳/上海",
+    "校招参考20-40K×16",
+    "GNSS/LiDAR/IMU/视觉多传感器融合定位建图；LIO-SAM/LIO-Mapping/VINS-Mono；C++、ROS",
+    "https://app.mokahr.com/campus_apply/deeproute/6487#/"
+   ],
+   [
+    "数据生成算法工程师（NeRF/3DGS场景重建）",
+    "深圳",
+    "校招未公开",
+    "NeRF/3DGS场景重建与仿真数据生成；三维重建算法基础；Python/C++",
+    "https://www.xiaohongshu.com/discovery/item/696715be000000000a0311e0"
+   ]
+  ],
+  "优必选": [
+   [
+    "仿真与3D重建算法工程师（2026届校招）",
+    "深圳/北京",
+    "校招未公开（社招参考30-60K）",
+    "三维重建算法（实时重建/表面重建）；视觉几何、相机标定；C++/Python、深度学习",
+    "https://ubtrobot.zhiye.com/campus"
+   ],
+   [
+    "视觉感知算法工程师（2026届校招）",
+    "深圳/北京",
+    "校招未公开",
+    "目标检测/分割、BEV/OCC；C++/Python、PyTorch；机器人视觉优先",
+    "https://ubtrobot.zhiye.com/campus"
+   ]
+  ],
+  "云鲸智能": [
+   [
+    "具身算法工程师（26届校招，含实时重建）",
+    "深圳",
+    "校招未公开",
+    "实时三维语义地图/场景图、实时表面重建与优化；视觉闭环定位、多信息融合视觉里程计；顶会/竞赛优先",
+    "https://careers.narwal.com/campus/jobs"
+   ],
+   [
+    "SLAM算法工程师（视觉方向，T0069）",
+    "深圳",
+    "校招未公开",
+    "视觉SLAM/导航算法；C++/Python、ROS；建图与定位",
+    "https://www.nowcoder.com/enterprise/8404"
+   ]
+  ],
+  "云天励飞": [
+   [
+    "研究员（CV方向，含SLAM和三维重建）",
+    "深圳",
+    "40-65K（拉勾参考，博士岗）",
+    "深度学习/CV核心算法：分类/检测/分割/跟踪/SLAM和三维重建；PyTorch/TF；顶会优先",
+    "https://www.lagou.com/wn/jobs/6574872.html"
+   ],
+   [
+    "AI算子开发工程师（2026校招）",
+    "深圳",
+    "16-24K/月（官方）",
+    "深度学习算子开发与GPU/NPU优化；C/C++/Python；CUDA/TensorRT加分",
+    "https://job.xidian.edu.cn/job/view/id/1512771/from_type/3/from_id/125439"
+   ]
+  ],
+  "思谋科技": [
+   [
+    "算法工程师（智能视觉方向，2026届校招）",
+    "深圳/香港/上海/苏州/北京",
+    "校招未公开",
+    "智能视觉/机器视觉算法；深度学习（PyTorch）；计算机/软件/自动化/光电",
+    "https://app.mokahr.com/su/n9mut"
+   ],
+   [
+    "计算机视觉算法工程师（UMI/EGO方向，社招）",
+    "深圳",
+    "30-60K×14（参考）",
+    "视觉算法（具身智能/视觉方向）",
+    "https://m.liepin.com/city-sz/zpjsjhsfgcsst8zjl/pn1/"
+   ]
+  ],
+  "小鹏汇天": [
+   [
+    "感知算法资深工程师/专家（深度学习）",
+    "广州",
+    "42-83.5K/月（参考，年薪50-100万）",
+    "双目立体匹配、目标检测/分割/跟踪；多视图几何/双目深度估计；Linux/ROS/C++",
+    "https://yili.jrzp.com/job3114507.shtml"
+   ],
+   [
+    "地图融合算法高级工程师",
+    "广州",
+    "33.5-54.5K/月（参考）",
+    "视觉在线地图构建、多源数据融合；多视图几何、滤波/最优化/状态估计；BEV感知融合加分",
+    "https://news.dayoo.com/guangdong/202603/15/139996_54936638.htm"
+   ],
+   [
+    "自驾感知·3D视觉算法实习",
+    "广州/上海",
+    "实习（6个月+加分）",
+    "3D生成/重建/理解；Diffusion/VGGT/Dust3R/NN-MVS/Mip-NeRF；点云/网格/体素、PyTorch/Open3D",
+    "zhaozr@aeroht.com"
+   ]
+  ],
+  "文远知行": [
+   [
+    "算法工程师（2027届校招，SLAM/点云/传感器融合）",
+    "广州/北上深等",
+    "校招约40-50K/月（官方）",
+    "SLAM、3D点云处理、传感器标定与融合、目标检测/跟踪；Python/Java/C++",
+    "https://app.mokahr.com/campus_apply/jingchi/2137#/"
+   ],
+   [
+    "激光雷达感知算法工程师（社招）",
+    "广州",
+    "面议",
+    "扎实数学基础；C++、PCL；CUDA加速",
+    "https://www.nowcoder.com/jobs/detail/246434"
+   ]
+  ],
+  "亿航智能": [
+   [
+    "算法工程师（感知/点云/SLAM方向）",
+    "广州黄埔",
+    "12.5-25K/月，硕士（参考）",
+    "激光雷达点云处理：滤波/分割/目标检测/识别/SLAM；嵌入式Linux/ROS",
+    "https://doctoraljob.com/position/details?id=68a9584081b240cc990907593a5e5a46"
+   ],
+   [
+    "组合导航算法工程师",
+    "广州黄埔",
+    "18-25K/月（参考）",
+    "GNSS/INS紧组合、SLAM；EKF组合导航；C/C++、Matlab",
+    "https://www.liepin.com/job/1970288277.shtml"
+   ]
+  ],
+  "极飞科技": [
+   [
+    "视觉算法工程师（社招/春招热招）",
+    "广州",
+    "12-40K×13（参考）",
+    "多传感器融合视觉SLAM室内外建图；SFM/MVS/DSM/DOM及三维重建（Colmap/OpenMVS）；ORB/MSCKF/Cartographer/FAST-LIO；CUDA加分",
+    "https://www.lagou.com/wn/jobs/11297425.html"
+   ],
+   [
+    "广州外业航飞技术员（测绘航飞）",
+    "广州",
+    "未标注",
+    "测绘相关专业本科可应届；测绘无人机航空摄影/地理信息获取",
+    "https://www.cehuiyc.com/Job_Detail.asp?Comid=CHa7qys4zd8v7945&Param=51533"
+   ]
+  ],
+  "中海达": [
+   [
+    "高级点云处理软件开发工程师（J12231）",
+    "广州番禺",
+    "18-25K×14（参考）",
+    "点云特征提取/分割/分类/配准/采样；CloudCompare、PCL、Open3D；硕士+3年",
+    "https://www.quanzhi.com/job/69c32aef639fcffaad208b84"
+   ],
+   [
+    "三维重建算法工程师",
+    "广州/南京",
+    "20-30K×14（参考）",
+    "三维重建、点云处理相关算法；测绘地信/计算机类2026届校招",
+    "https://m.liepin.com/city-gz/zpswzjsfgcssxsc73f38/"
+   ],
+   [
+    "软件工程师（C++·激光雷达点云）",
+    "广州/武汉/南京",
+    "未公开",
+    "点云融合/后处理/SLAM后处理软件平台；测绘、GIS、摄影测量与遥感专业；C/C++、PCL",
+    "https://www.51shuobo.com/guangzhou/job_277463977.html"
+   ]
+  ],
+  "南方测绘": [
+   [
+    "激光/SLAM算法工程师（2026届校招）",
+    "广州",
+    "校招",
+    "硕士+；多传感器融合（雷达+IMU+视觉）项目经验；CUDA/GPU或嵌入式（Jetson/ARM）；三维重建项目经历",
+    "https://fenbi.com/page/positions/9/419388?department=广州南方测绘"
+   ]
+  ],
+  "飞渡科技": [
+   [
+    "研发助理工程师（2026届校招）",
+    "北京海淀/深圳",
+    "未标注（实习200-300元/天参考）",
+    "地理信息/计算机；JavaScript/Python/Java/C++至少一门；网络协议/Git/Linux",
+    "https://jobs.bjbys.net.cn/frontpage/bjbys/html/bilateralchosefairOrderForm.html?recruitmentId=2d99c3146c5c419dbc24391f7d37f123"
+   ],
+   [
+    "GIS全栈开发工程师（数字孪生）",
+    "北京",
+    "13-22K（参考）",
+    "三维GIS全栈开发，面向中东交付；GIS/三维空间技术",
+    "https://www.liepin.com/job/1983702515.shtml"
+   ]
+  ],
+  "小马智行": [
+   [
+    "定位建图算法工程师（2026校招/春招）",
+    "广州/深圳/北京/上海",
+    "校招未公开",
+    "在线/离线建图、高精定位、多传感器融合（GNSS/定位）；C++、SLAM建图框架",
+    "https://campus.pony.ai/"
+   ],
+   [
+    "感知算法工程师（2026校招）",
+    "北京/广州/上海/深圳",
+    "研发岗月薪2W+",
+    "目标检测/跟踪、BEV；C++/Python、PyTorch",
+    "https://campus.pony.ai/"
+   ]
+  ],
+  "数字绿土": [
+   [
+    "3DGS三维重建算法工程师（2026届+实习）",
+    "北京海淀/武汉",
+    "月薪20K+；校招算法25-35万/年（官方）",
+    "SFM/MVS/NeRF/3DGS；Python/C++、PyTorch/TF；colmap/openmvs/3DGS；激光雷达点云优先",
+    "http://career.csu.edu.cn/job/view/id/1155199"
+   ],
+   [
+    "点云算法工程师（2026届）",
+    "北京海淀",
+    "月薪20-25K（参考）",
+    "测绘/GIS/遥感/计算机/数学；精通C/C++、OpenCV；PCL点云库、LiDAR数据处理（去噪/匹配/分割）",
+    "http://career.csu.edu.cn/job/view/id/1155198"
+   ],
+   [
+    "SLAM算法工程师（2026届）",
+    "成都",
+    "校招25-35万/年（参考）",
+    "SLAM/三维重建/点云方向",
+    "http://career.csu.edu.cn/job/view/id/1155194"
+   ]
+  ],
+  "图达通": [
+   [
+    "激光雷达点云算法工程师",
+    "苏州（深圳未核实）",
+    "35-65K×15（参考）",
+    "激光雷达点云算法（点云分割等）",
+    "https://m.liepin.com/zpjglddysfgcso53v/"
+   ]
+  ],
+  "华测导航": [
+   [
+    "3D点云算法工程师/专家",
+    "上海青浦",
+    "25-50K×16（参考）",
+    "点云预处理/后处理（配准、激光相机自动标定、去噪、特征提取、语义分割、模型化/矢量化、三维重建）；CUDA移植",
+    "https://www.liepin.com/job/1971660309.shtml"
+   ],
+   [
+    "SLAM算法工程师",
+    "北京/上海",
+    "40-60K×16（参考）",
+    "VIO/LIO/LVIO开源框架；GNSS/IMU组合导航；Cartographer/LIO-SAM/FAST-LIO/LOAM；C++/ROS",
+    "https://www.liepin.com/job/1983182891.shtml"
+   ],
+   [
+    "2026届校招·算法工程师",
+    "上海/武汉/北京/南京",
+    "校招",
+    "测绘/点云/SLAM方向细分",
+    "https://huace.zhiye.com"
+   ]
+  ],
+  "高德/阿里": [
+   [
+    "高德-高级渲染数据建模工程师（三维重建方向）",
+    "北京朝阳",
+    "25-50K/月（参考）",
+    "实景建模与3D空间关系构建；3DGS/Colmap/NeRF/点云/SDF/Mesh；OpenGL ES/Vulkan；C++/Python、CGAL/VCGLib",
+    "http://www.whwcrc.com/job9374808.shtml"
+   ],
+   [
+    "通义实验室-多模态生成算法（通义万相）",
+    "北京/杭州",
+    "4-7万/月（参考）",
+    "原生多模态世界模型（图像/视频/音频/3D）；扩散模型与自回归；PyTorch；顶会优先",
+    "https://cili.zjjrczp.com/job/338659306.html"
+   ],
+   [
+    "高德视觉技术中心-多模态大模型/端到端算法",
+    "北京",
+    "未标注",
+    "厘米级高精地图、实时三维重建、多模态感知；Map-based Localization/VIO/端到端定位",
+    "https://www.mianshima.com/job/21/100003440007"
+   ]
+  ],
+  "字节/即梦": [
+   [
+    "3D视觉生成工程师-智能创作（2026届校招）",
+    "北京",
+    "未标注",
+    "3D生成/重建/数字人/视觉；落地抖音/剪映/即梦/火山引擎；深度学习框架、ACM/顶会优先",
+    "https://jobs.bytedance.com/campus/position/7530191951740913927/detail"
+   ],
+   [
+    "AIG3D算法工程师-视频与边缘（社招）",
+    "北京/上海",
+    "未标注",
+    "文生3D/图生3D/3D场景生成；3D VAE/3D DiT/智能布线/UV展开；NeRF/3DGS/SDF/Diffusion",
+    "https://www.quanzhi.com/job/698ce5ebfc45f410490f2f88"
+   ],
+   [
+    "3D视觉研发实习生（ByteIntern，2027届）",
+    "北京",
+    "实习（日薪约400-800元）",
+    "3D生成、视频生成算法；2026.09-2027.08毕业硕博；有转正机会",
+    "https://jobs.bytedance.com/campus/position/7592118818702149893/detail"
+   ]
+  ],
+  "快手/可灵": [
+   [
+    "视频生成强化学习算法工程师（留用实习）",
+    "深圳",
+    "未标注",
+    "视频生成大模型+多模态控制RL；奖励模型设计与多目标RL",
+    "https://www.quanzhi.com/job/69b8c89d3e67084e25e3f8d4"
+   ]
+  ],
+  "商汤科技": [
+   [
+    "3D生成算法研究员（3DGS/NeRF）",
+    "广州/上海",
+    "20-40K×15（参考）",
+    "深度运用3DGS与NeRF对真实场景高精度数字化重建；算法优化与参数调优",
+    "https://www.zhipin.com/zhaopin/43047e29fa4cf4c41nR-0tS_Ew~~/"
+   ],
+   [
+    "生成式重建算法研发（社招）",
+    "上海",
+    "未标注",
+    "Image/Video/Text-to-3D、Scene Reconstruction生成式重建；3DGS、Diffusion、World Model",
+    "https://m.zhipin.com/zhaopin/deba958c1fd41f0933d93tW1"
+   ]
+  ],
+  "旷视科技": [
+   [
+    "SLAM/VIO/三维重建算法研究员",
+    "北京",
+    "未标注",
+    "视觉SLAM/VIO/三维重建、多传感器融合、高精地图重建；ORB-SLAM2/VINS/OKVIS、ceres/g2o；C/C++",
+    "https://www.nowcoder.com/careers/Megviicampus/38302?jobIds=47218"
+   ],
+   [
+    "算法研究/研发实习生（3D方向）",
+    "北京/上海/南京/成都",
+    "300-400元/天（参考）",
+    "视觉/激光SLAM、室内外高精地图、多传感器融合、移动端三维重建；3个月+、可转正",
+    "https://www.nowcoder.com/intern/1374"
+   ]
+  ],
+  "地平线": [
+   [
+    "智能驾驶端到端算法工程师（生成式/VLA方向）",
+    "北京/上海/南京/杭州/深圳/香港",
+    "校招硕士约30-60K",
+    "端到端模型架构（VLM/VLA、Diffusion/Flow Matching）；数据闭环；PyTorch、C++/Python",
+    "http://www.job.ustc.edu.cn/Recruitment/info.aspx?itemid=33338"
+   ],
+   [
+    "博士专项计划（视觉基模/世界模型）",
+    "北京/上海",
+    "未标注",
+    "视觉基模、世界模型、多模态大模型、运动控制（具身）",
+    "http://job.ucas.ac.cn/frontpage/ucas/html/recruitmentinfoForm.html?positionDetailId=8041766901bc442eb624cecd60d49a53"
+   ]
+  ],
+  "毫末智行": [
+   [
+    "泊车-SLAM算法专家/工程师",
+    "上海嘉定",
+    "30-60K/月（参考）",
+    "有/无高精地图下建图与定位架构；激光/视觉SLAM、语义地图、图优化；应届硕士可投",
+    "http://www.changningjob.com/job12902604.shtml"
+   ],
+   [
+    "泊车-感知融合算法工程师",
+    "上海嘉定",
+    "30-60K/月（参考）",
+    "相机+激光雷达+USS多传感器融合；卡尔曼/粒子滤波；深度学习+SLAM基础",
+    "http://shnhrc.com/job22579550.shtml"
+   ]
+  ],
+  "智行者": [
+   [
+    "自动驾驶感知算法工程师",
+    "北京",
+    "16-25K/月（参考）",
+    "Camera/Lidar检测分割跟踪、三维重建；硕士，经验不限",
+    "https://job.shenlanxueyuan.com/search"
+   ],
+   [
+    "定位算法工程师/专家（SLAM）",
+    "北京",
+    "50K+/月（参考，博士）",
+    "定位/SLAM方向，与感知/高精地图强相关",
+    "https://job.shenlanxueyuan.com/search"
+   ]
+  ],
+  "先临三维": [
+   [
+    "三维重建算法工程师（结构光方向）",
+    "杭州萧山",
+    "提前批15-19.9K（参考）",
+    "多视角匹配、图像处理基础；数值分析与最优化；实际C++编程",
+    "https://career.nankai.edu.cn/correcruit/content/id/113059.html"
+   ],
+   [
+    "SLAM算法工程师",
+    "杭州",
+    "同批（算法类）",
+    "SLAM/三维视觉体系",
+    "https://shining3d.zhiye.com"
+   ],
+   [
+    "网格数据处理算法工程师",
+    "杭州",
+    "同批（算法类，招10-20人）",
+    "对3DGS、Diffusion有深入理解与实践；三维重建/网格生成经验优先",
+    "https://shining3d.zhiye.com"
+   ]
+  ],
+  "知象光电": [
+   [
+    "算法工程师（含三维重建方向）",
+    "西安",
+    "15-25K/月（参考）",
+    "统招硕士；3D建模/3D成像/三维重建/机器人视觉方向",
+    "http://job.xatu.edu.cn/detail/job?id=2695572&online_id=3474175"
+   ],
+   [
+    "点云后处理算法工程师",
+    "西安",
+    "同批（参考15-25K）",
+    "点云处理方向",
+    "https://hr.revopoint3d.com.cn"
+   ]
+  ],
+  "图漾科技": [
+   [
+    "工业视觉算法工程师（3D点云方向）",
+    "上海浦东",
+    "年薪15-40万（参考）",
+    "立体视觉/多视图几何（相机模型、对极几何、标定、SfM）；OpenCV/PCL/OpenGL/CGAL；点云降噪/特征/模板匹配",
+    "https://msearch.51job.com/jobs/shanghai-pdxq/167129927.html"
+   ],
+   [
+    "视觉算法高级工程师",
+    "上海",
+    "同批",
+    "图像处理/模式识别；OpenCV/PCL/Open3D；C/C++；算法优化/并行加速优先",
+    "https://www.percipio.xyz/aboutus/hr/"
+   ]
+  ],
+  "梅卡曼德": [
+   [
+    "3D视觉算法工程师（识别定位｜3D匹配）",
+    "北京海淀",
+    "30-60K×14薪（官方）",
+    "6DoF位姿估计、点云配准/匹配；CUDA GPU编程；C++/Python、PyTorch；TensorRT/ONNX",
+    "https://www.liepin.com/job/1983697047.shtml"
+   ],
+   [
+    "视觉算法工程师",
+    "北京",
+    "20-40K（拉勾参考）",
+    "计算机/机器人/遥感测绘专业；2D/3D视觉算法；C/C++、PCL/OpenCV",
+    "https://www.lagou.com/wn/jobs/11049412.html"
+   ]
+  ],
+  "睿铂科技": [
+   [
+    "SLAM算法工程师",
+    "成都高新区",
+    "30-40K/月（参考）",
+    "精通C++，OpenCV/PCL；SIFT/SURF/ORB匹配、ICP/NDT配准；ORB-SLAM/VINS/LIO-SAM；GTSAM/Ceres加分",
+    "https://m.cdpdrc.com/job/345047008.html"
+   ]
+  ],
+  "埃洛克": [
+   [
+    "未检索到2026明确算法在招岗（WebGL/Three.js技术岗）",
+    "北京丰台",
+    "未公开",
+    "实景三维地图方向；建议官网/邮箱咨询算法岗",
+    "https://www.airlook.com"
+   ]
+  ],
+  "天际航": [
+   [
+    "算法工程师（图形/图像/机器视觉）",
+    "武汉东湖高新区",
+    "9-20K/月（参考）",
+    "摄影测量/CV/图形学/GIS/遥感/测绘；C/C++、OpenCV；SFM、SLAM、BA；三维构网/计算几何/纹理映射",
+    "https://jobs.51job.com//wuhan/137722535.html"
+   ]
+  ],
+  "瞰景科技": [
+   [
+    "三维重建高级算法工程师",
+    "上海青浦",
+    "30-80K/月（官方）",
+    "摄影测量/CV/图形学；SFM/空三/相机标定/特征匹配/平差（OpenMVS/MVE/Colmap）；NeRF、Gaussian Splatting；C++/Python、CUDA/Vulkan",
+    "https://mp.weixin.qq.com/s?__biz=MzU1MjY4MTA1MQ==&mid=2247667271&idx=2&sn=771ed60dd4cff483472e6fdfa1c61163"
+   ]
+  ]
+ },
+ "OVERSEA": [
+  "Adobe",
+  "Autodesk",
+  "Blender基金会",
+  "Dassault",
+  "Epic Games",
+  "Luma AI",
+  "Maxon",
+  "SideFX"
+ ]
+}

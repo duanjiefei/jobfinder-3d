@@ -1,0 +1,10 @@
+# 种子数据生成（零额外依赖即可跑 build_seed_jobs）
+# 抓取刷新（fetch_jobs）需要以下：
+playwright>=1.44
+httpx>=0.27
+beautifulsoup4>=4.12
+lxml>=5.0
+PyYAML>=6.0
+# 服务端（server.py，支持 UI 刷新按钮 + 公网访问）
+flask>=3.0
+gunicorn>=22.0   # 云部署（Render/Railway）生产服务器
