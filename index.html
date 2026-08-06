@@ -378,7 +378,7 @@ async function refreshData(){
           clearInterval(t);
           st.textContent='✅ 刷新完成 '+s.finished+' · 新增 '+s.last_count+' · 共 '+s.total+' 条'+errs;
           btn.disabled=false;
-          await loadData();
+          STATE.data = await loadData();   // 关键：必须更新 STATE.data，否则仍显示旧数据
           initFilters(STATE.data);
           applyAndRender();
         }
