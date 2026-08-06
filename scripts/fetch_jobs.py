@@ -88,8 +88,8 @@ def run_refresh(adapters="official,nowcoder", keep_seed=True, write=True):
 
 def main():
     ap = argparse.ArgumentParser(description="从网上刷新岗位数据 -> jobs.json")
-    ap.add_argument("--adapters", default="official,nowcoder",
-                    help="逗号分隔的 adapter 名：official,nowcoder,university,boss,liepin,lagou")
+    ap.add_argument("--adapters", default="tencent,official,nowcoder",
+                    help="逗号分隔的 adapter 名：tencent,official,nowcoder,university,boss,liepin,lagou")
     ap.add_argument("--seed", dest="seed", action="store_true", default=True, help="保留 seed 兜底岗（默认）")
     ap.add_argument("--no-seed", dest="seed", action="store_false")
     ap.add_argument("--dry", action="store_true", help="只跑适配器不写文件（验证管线）")

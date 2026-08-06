@@ -1,15 +1,16 @@
 {
- "generated_at": "2026-08-06T13:44:42+08:00",
+ "generated_at": "2026-08-06T14:07:46+08:00",
  "schema_version": "1.0",
  "stats": {
-  "total": 159,
+  "total": 170,
   "by_source": {
-   "seed": 159
+   "seed": 159,
+   "tencent": 11
   },
   "by_city": {
-   "北京": 56,
-   "上海": 43,
-   "深圳": 42,
+   "北京": 57,
+   "深圳": 50,
+   "上海": 45,
    "广州": 22,
    "杭州": 19,
    "武汉": 9,
@@ -25,18 +26,18 @@
    "荷兰": 1
   },
   "by_tag": {
-   "三维重建": 72,
-   "SLAM": 62,
+   "三维重建": 83,
+   "SLAM": 73,
    "C++": 62,
    "LiDAR点云": 55,
+   "城市AI": 43,
    "NeRF/3DGS": 36,
-   "城市AI": 34,
    "Python": 33,
-   "图形学": 30,
+   "图形学": 31,
+   "3D生成": 30,
    "摄影测量": 25,
    "PyTorch": 25,
-   "3D生成": 25,
-   "GIS": 20,
+   "GIS": 21,
    "具身/机器人": 16,
    "OpenCV": 14,
    "CUDA": 14,
@@ -9216,6 +9217,583 @@
     "sal_tier": 20,
     "stars": 2,
     "match_score": 15
+   },
+   "apply_text": "投递",
+   "notes": ""
+  },
+  {
+   "id": "腾讯-混元3d场景生成与交互大模型研究员-北京-上海__b9f526c8",
+   "source": "tencent",
+   "source_url": "https://careers.tencent.com/tencentcareer/detail.html?postId=1947135243089715200",
+   "first_seen": null,
+   "last_seen": "2026-08-06",
+   "title_raw": "混元3D场景生成与交互大模型研究员（北京/上海）",
+   "city_raw": "深圳",
+   "salary_raw": "",
+   "requirement_raw": "1.研发新一代3D场景生成大模型、重建大模型，突破质量、速度、场景规模的边界，并推动其在游戏、仿真等领域的应用；\n2.结合3D/2D生成技术，研发新一代世界模型，实现实时交互、精准可控、符合物理规律的世界交互。 ",
+   "company": "腾讯",
+   "title": "混元3D场景生成与交互大模型研究员（北京/上海）",
+   "cities": [
+    "深圳"
+   ],
+   "regions": [
+    "大湾区"
+   ],
+   "salary": {
+    "min_k": null,
+    "max_k": null,
+    "months": null,
+    "annual_k_min": null,
+    "annual_k_max": null,
+    "currency": null,
+    "unit": null,
+    "display_unit": null,
+    "confidence": "unknown",
+    "raw": ""
+   },
+   "hire_type": "不限",
+   "experience": {
+    "level": "不限",
+    "education": "不限",
+    "is_fresh_friendly": true
+   },
+   "tags": [
+    "三维重建",
+    "SLAM",
+    "城市AI"
+   ],
+   "tags_primary": "三维重建",
+   "priority": {
+    "tier": 0,
+    "size_tier": 10,
+    "sal_tier": 50,
+    "stars": 4,
+    "match_score": 56
+   },
+   "apply_text": "投递",
+   "notes": ""
+  },
+  {
+   "id": "腾讯-混元多模态数据开发工程师-北京__acadc793",
+   "source": "tencent",
+   "source_url": "https://careers.tencent.com/tencentcareer/detail.html?postId=2014159284463624192",
+   "first_seen": null,
+   "last_seen": "2026-08-06",
+   "title_raw": "混元多模态数据开发工程师（北京）",
+   "city_raw": "深圳",
+   "salary_raw": "",
+   "requirement_raw": "1.负责多模态AI数据管线的设计与开发，覆盖语音、图像、视频、3D等数据类型；\r\n2.搭建高效的数据预处理pipeline，设计高吞吐的数据存储与索引系统，支撑大规模训练数据集生产；\r\n3.与算法/研究员协作，实现离在线一致的数据构造与对齐流程；\r\n4.负责管线服务的稳定性、性能优化与可观测性建设，支撑 AI数据全天高效生产；\r\n5.探索自动化数据质量评估、数据合成、AIGC辅助数据生产等方向。 ",
+   "company": "腾讯",
+   "title": "混元多模态数据开发工程师（北京）",
+   "cities": [
+    "深圳"
+   ],
+   "regions": [
+    "大湾区"
+   ],
+   "salary": {
+    "min_k": null,
+    "max_k": null,
+    "months": null,
+    "annual_k_min": null,
+    "annual_k_max": null,
+    "currency": null,
+    "unit": null,
+    "display_unit": null,
+    "confidence": "unknown",
+    "raw": ""
+   },
+   "hire_type": "不限",
+   "experience": {
+    "level": "不限",
+    "education": "不限",
+    "is_fresh_friendly": true
+   },
+   "tags": [
+    "三维重建",
+    "SLAM",
+    "3D生成"
+   ],
+   "tags_primary": "三维重建",
+   "priority": {
+    "tier": 0,
+    "size_tier": 10,
+    "sal_tier": 50,
+    "stars": 4,
+    "match_score": 56
+   },
+   "apply_text": "投递",
+   "notes": ""
+  },
+  {
+   "id": "腾讯-混元aigc算法研究员-文生3d-深圳-北京-上海__ea640c50",
+   "source": "tencent",
+   "source_url": "https://careers.tencent.com/tencentcareer/detail.html?postId=1808701309486899200",
+   "first_seen": null,
+   "last_seen": "2026-08-06",
+   "title_raw": "混元AIGC算法研究员（文生3D）（深圳/北京/上海）",
+   "city_raw": "深圳",
+   "salary_raw": "",
+   "requirement_raw": "1.研发新一代3D资产生成大模型，突破生成质量、速度与可控性的技术边界；\n2.构建工业级3D AI生成管线，解决几何拓扑优化、材质贴图生成、物理合理性等核心问题。 ",
+   "company": "腾讯",
+   "title": "混元AIGC算法研究员（文生3D）（深圳/北京/上海）",
+   "cities": [
+    "深圳"
+   ],
+   "regions": [
+    "大湾区"
+   ],
+   "salary": {
+    "min_k": null,
+    "max_k": null,
+    "months": null,
+    "annual_k_min": null,
+    "annual_k_max": null,
+    "currency": null,
+    "unit": null,
+    "display_unit": null,
+    "confidence": "unknown",
+    "raw": ""
+   },
+   "hire_type": "不限",
+   "experience": {
+    "level": "不限",
+    "education": "不限",
+    "is_fresh_friendly": true
+   },
+   "tags": [
+    "三维重建",
+    "SLAM",
+    "3D生成"
+   ],
+   "tags_primary": "三维重建",
+   "priority": {
+    "tier": 0,
+    "size_tier": 10,
+    "sal_tier": 50,
+    "stars": 4,
+    "match_score": 56
+   },
+   "apply_text": "投递",
+   "notes": ""
+  },
+  {
+   "id": "腾讯-腾讯地图-aigc视觉算法专家-大模型应用方向__ead8b63c",
+   "source": "tencent",
+   "source_url": "https://careers.tencent.com/tencentcareer/detail.html?postId=2028325900583600128",
+   "first_seen": null,
+   "last_seen": "2026-08-06",
+   "title_raw": "腾讯地图-AIGC视觉算法专家-大模型应用方向",
+   "city_raw": "北京",
+   "salary_raw": "",
+   "requirement_raw": "1.研发基于视觉大模型的AIGC算法，实现地图要素（尤其是建筑）的模型超分、风格化生成、材质替换与色彩增强；\n2.利用文生图/图生图大模型，结合地理信息，为批量建筑自动生成符合语义、光照一致性的风格化纹理与材质；\n3.针对特定风格（如卡通渲染、赛博朋克、水墨风）进行定向优化，实现城市级规模的一键换肤；\n4.推动技术在产品中落地，解决生成内容的几何一致性、视觉舒适度与性能开销等挑战。 ",
+   "company": "腾讯",
+   "title": "腾讯地图-AIGC视觉算法专家-大模型应用方向",
+   "cities": [
+    "北京"
+   ],
+   "regions": [
+    "京津冀"
+   ],
+   "salary": {
+    "min_k": null,
+    "max_k": null,
+    "months": null,
+    "annual_k_min": null,
+    "annual_k_max": null,
+    "currency": null,
+    "unit": null,
+    "display_unit": null,
+    "confidence": "unknown",
+    "raw": ""
+   },
+   "hire_type": "社招",
+   "experience": {
+    "level": "不限",
+    "education": "不限",
+    "is_fresh_friendly": true
+   },
+   "tags": [
+    "三维重建",
+    "SLAM",
+    "GIS",
+    "城市AI",
+    "3D生成",
+    "图形学"
+   ],
+   "tags_primary": "三维重建",
+   "priority": {
+    "tier": 0,
+    "size_tier": 10,
+    "sal_tier": 50,
+    "stars": 4,
+    "match_score": 59
+   },
+   "apply_text": "投递",
+   "notes": ""
+  },
+  {
+   "id": "腾讯-腾讯游戏-多模态世界模型数据工程师__b10a650c",
+   "source": "tencent",
+   "source_url": "https://careers.tencent.com/tencentcareer/detail.html?postId=2056638729380085760",
+   "first_seen": null,
+   "last_seen": "2026-08-06",
+   "title_raw": "腾讯游戏-多模态世界模型数据工程师",
+   "city_raw": "上海",
+   "salary_raw": "",
+   "requirement_raw": "1.面向世界模型（World Model）场景下多模态大模型的预训练与后训练数据需求，围绕2D视频数据与3D场景数据构建自动化、高效率的数据处理管线，覆盖数据采集、清洗、结构化、合成、质量评估与版本管理等环节，持续优化系统性能，保障管线的稳定性、可扩展性与可复用性；\n2.设计并开发数据处理工具与自动化脚本，提升数据清洗、标注与合成效率，支撑数据规模化生产与迭代；\n3.建立数据质量评估与自动化检测体系；\n4.与算法研究团队深度协作，理解世界模型在视频预测、场景建模与交互推理等任务中的训练需求，制定针对性的多模态数据策略，持续挖掘高价值数据资源，推动以数据为核心驱动的模型能力演进与迭代。 ",
+   "company": "腾讯",
+   "title": "腾讯游戏-多模态世界模型数据工程师",
+   "cities": [
+    "上海"
+   ],
+   "regions": [
+    "长三角"
+   ],
+   "salary": {
+    "min_k": null,
+    "max_k": null,
+    "months": null,
+    "annual_k_min": null,
+    "annual_k_max": null,
+    "currency": null,
+    "unit": null,
+    "display_unit": null,
+    "confidence": "unknown",
+    "raw": ""
+   },
+   "hire_type": "不限",
+   "experience": {
+    "level": "不限",
+    "education": "不限",
+    "is_fresh_friendly": true
+   },
+   "tags": [
+    "三维重建",
+    "SLAM",
+    "城市AI"
+   ],
+   "tags_primary": "三维重建",
+   "priority": {
+    "tier": 0,
+    "size_tier": 10,
+    "sal_tier": 50,
+    "stars": 4,
+    "match_score": 52
+   },
+   "apply_text": "投递",
+   "notes": ""
+  },
+  {
+   "id": "腾讯-混元aigc算法研究员-世界模型基模方向-北京-上海__279f604a",
+   "source": "tencent",
+   "source_url": "https://careers.tencent.com/tencentcareer/detail.html?postId=1961707720809795584",
+   "first_seen": null,
+   "last_seen": "2026-08-06",
+   "title_raw": "混元AIGC算法研究员（世界模型基模方向）（北京/上海）",
+   "city_raw": "深圳",
+   "salary_raw": "",
+   "requirement_raw": "1.从事视频世界大模型的研发，包括训练数据的设计和构造，基础模型算法的设计，针对预训练/SFT/RL相关的优化，模型能力的评测，各种下游应用场景的探索；\r\n2.科学分析研发中的各种问题，找到模型性能的瓶颈，从第一性原理出发找到解决方案，加速世界模型的开发和迭代，确保模型的竞争力和领先性；\r\n3.探索实现世界模型的不同范式，研究下一代的模型架构，探索世界模型的边界。 ",
+   "company": "腾讯",
+   "title": "混元AIGC算法研究员（世界模型基模方向）（北京/上海）",
+   "cities": [
+    "深圳"
+   ],
+   "regions": [
+    "大湾区"
+   ],
+   "salary": {
+    "min_k": null,
+    "max_k": null,
+    "months": null,
+    "annual_k_min": null,
+    "annual_k_max": null,
+    "currency": null,
+    "unit": null,
+    "display_unit": null,
+    "confidence": "unknown",
+    "raw": ""
+   },
+   "hire_type": "不限",
+   "experience": {
+    "level": "不限",
+    "education": "不限",
+    "is_fresh_friendly": true
+   },
+   "tags": [
+    "三维重建",
+    "SLAM",
+    "城市AI",
+    "3D生成"
+   ],
+   "tags_primary": "三维重建",
+   "priority": {
+    "tier": 0,
+    "size_tier": 10,
+    "sal_tier": 50,
+    "stars": 4,
+    "match_score": 66
+   },
+   "apply_text": "投递",
+   "notes": ""
+  },
+  {
+   "id": "腾讯-腾讯游戏-高级项目管理经理-世界模型数据方向__192b83ee",
+   "source": "tencent",
+   "source_url": "https://careers.tencent.com/tencentcareer/detail.html?postId=2061620485397069824",
+   "first_seen": null,
+   "last_seen": "2026-08-06",
+   "title_raw": "腾讯游戏-高级项目管理经理-世界模型数据方向",
+   "city_raw": "深圳",
+   "salary_raw": "",
+   "requirement_raw": "1.数据管线日常跟进与质量质检：深入世界模型与实时视频生成模型底层数据的全生命周期管理；执行并优化训练数据集（如游戏录制、白盒解析等）的构建方案，严格落实质量抽检机制，对每日流转数据的合规性与交付质量把关；\r\n2.跨团队协同与进度追踪：串联算法、工程、客户端及外部供应商（外包）团队的日常对接；跟进梳理模型从数据采集、训练到 Demo 部署验证的业务链路，保障流水线高效流转；\r\n3.供应商与日常开发排期管理：跟进执行世界模型核心子项目的进度与外包资源调度；敏锐识别多线并行开发中的技术卡点（如工具 Bug、引擎Condition数据录制异常），并通过项管工具推动各方按期解决；\r\n4.数据异常分析与",
+   "company": "腾讯",
+   "title": "腾讯游戏-高级项目管理经理-世界模型数据方向",
+   "cities": [
+    "深圳"
+   ],
+   "regions": [
+    "大湾区"
+   ],
+   "salary": {
+    "min_k": null,
+    "max_k": null,
+    "months": null,
+    "annual_k_min": null,
+    "annual_k_max": null,
+    "currency": null,
+    "unit": null,
+    "display_unit": null,
+    "confidence": "unknown",
+    "raw": ""
+   },
+   "hire_type": "社招",
+   "experience": {
+    "level": "不限",
+    "education": "不限",
+    "is_fresh_friendly": true
+   },
+   "tags": [
+    "三维重建",
+    "SLAM",
+    "城市AI"
+   ],
+   "tags_primary": "三维重建",
+   "priority": {
+    "tier": 0,
+    "size_tier": 10,
+    "sal_tier": 50,
+    "stars": 4,
+    "match_score": 53
+   },
+   "apply_text": "投递",
+   "notes": ""
+  },
+  {
+   "id": "腾讯-腾讯游戏-多模态世界模型算法研究员-视频生成方向__1e905c2a",
+   "source": "tencent",
+   "source_url": "https://careers.tencent.com/tencentcareer/detail.html?postId=2043939388567744512",
+   "first_seen": null,
+   "last_seen": "2026-08-06",
+   "title_raw": "腾讯游戏-多模态世界模型算法研究员-视频生成方向",
+   "city_raw": "深圳",
+   "salary_raw": "",
+   "requirement_raw": "1.负责世界模型（World Model）相关核心算法的研发与落地，包括但不限于视频生成、视频预测、视频编辑等方向；\n2.探索面向游戏世界场景的新一代视频生成技术，构建具备可交互性、可编辑性、物理一致性和时空一致性的世界模型。 ",
+   "company": "腾讯",
+   "title": "腾讯游戏-多模态世界模型算法研究员-视频生成方向",
+   "cities": [
+    "深圳"
+   ],
+   "regions": [
+    "大湾区"
+   ],
+   "salary": {
+    "min_k": null,
+    "max_k": null,
+    "months": null,
+    "annual_k_min": null,
+    "annual_k_max": null,
+    "currency": null,
+    "unit": null,
+    "display_unit": null,
+    "confidence": "unknown",
+    "raw": ""
+   },
+   "hire_type": "不限",
+   "experience": {
+    "level": "不限",
+    "education": "不限",
+    "is_fresh_friendly": true
+   },
+   "tags": [
+    "三维重建",
+    "SLAM",
+    "城市AI"
+   ],
+   "tags_primary": "三维重建",
+   "priority": {
+    "tier": 0,
+    "size_tier": 10,
+    "sal_tier": 50,
+    "stars": 4,
+    "match_score": 56
+   },
+   "apply_text": "投递",
+   "notes": ""
+  },
+  {
+   "id": "腾讯-腾讯游戏-多模态世界模型算法研究员-视频生成方向__8c174fb3",
+   "source": "tencent",
+   "source_url": "https://careers.tencent.com/tencentcareer/detail.html?postId=2043939391151439872",
+   "first_seen": null,
+   "last_seen": "2026-08-06",
+   "title_raw": "腾讯游戏-多模态世界模型算法研究员-视频生成方向",
+   "city_raw": "上海",
+   "salary_raw": "",
+   "requirement_raw": "1.负责世界模型（World Model）相关核心算法的研发与落地，包括但不限于视频生成、视频预测、视频编辑等方向；\n2.探索面向游戏世界场景的新一代视频生成技术，构建具备可交互性、可编辑性、物理一致性和时空一致性的世界模型。 ",
+   "company": "腾讯",
+   "title": "腾讯游戏-多模态世界模型算法研究员-视频生成方向",
+   "cities": [
+    "上海"
+   ],
+   "regions": [
+    "长三角"
+   ],
+   "salary": {
+    "min_k": null,
+    "max_k": null,
+    "months": null,
+    "annual_k_min": null,
+    "annual_k_max": null,
+    "currency": null,
+    "unit": null,
+    "display_unit": null,
+    "confidence": "unknown",
+    "raw": ""
+   },
+   "hire_type": "不限",
+   "experience": {
+    "level": "不限",
+    "education": "不限",
+    "is_fresh_friendly": true
+   },
+   "tags": [
+    "三维重建",
+    "SLAM",
+    "城市AI"
+   ],
+   "tags_primary": "三维重建",
+   "priority": {
+    "tier": 0,
+    "size_tier": 10,
+    "sal_tier": 50,
+    "stars": 4,
+    "match_score": 52
+   },
+   "apply_text": "投递",
+   "notes": ""
+  },
+  {
+   "id": "腾讯-游戏ai-多模态世界模型算法专家-可控视频生成方向__b0986970",
+   "source": "tencent",
+   "source_url": "https://careers.tencent.com/tencentcareer/detail.html?postId=2043890150156693504",
+   "first_seen": null,
+   "last_seen": "2026-08-06",
+   "title_raw": "游戏AI-多模态世界模型算法专家-可控视频生成方向",
+   "city_raw": "深圳",
+   "salary_raw": "",
+   "requirement_raw": "1.探索研究多模态理解、生成式、强化学习等前沿技术；\r\n2.负责世界模型相关核心算法的研发与落地，包括但不限于视频生成、视频预测、视频编辑等方向；\r\n3.探索面向游戏世界场景的新一代视频生成技术，构建具备可交互性、可编辑性、物理一致性和时空一致性的世界模型。 ",
+   "company": "腾讯",
+   "title": "游戏AI-多模态世界模型算法专家-可控视频生成方向",
+   "cities": [
+    "深圳"
+   ],
+   "regions": [
+    "大湾区"
+   ],
+   "salary": {
+    "min_k": null,
+    "max_k": null,
+    "months": null,
+    "annual_k_min": null,
+    "annual_k_max": null,
+    "currency": null,
+    "unit": null,
+    "display_unit": null,
+    "confidence": "unknown",
+    "raw": ""
+   },
+   "hire_type": "社招",
+   "experience": {
+    "level": "不限",
+    "education": "不限",
+    "is_fresh_friendly": true
+   },
+   "tags": [
+    "三维重建",
+    "SLAM",
+    "城市AI",
+    "3D生成"
+   ],
+   "tags_primary": "三维重建",
+   "priority": {
+    "tier": 0,
+    "size_tier": 10,
+    "sal_tier": 50,
+    "stars": 4,
+    "match_score": 63
+   },
+   "apply_text": "投递",
+   "notes": ""
+  },
+  {
+   "id": "腾讯-腾讯游戏-多模态世界模型算法研究专家-视频生成方向__7179eca9",
+   "source": "tencent",
+   "source_url": "https://careers.tencent.com/tencentcareer/detail.html?postId=2008376135062278144",
+   "first_seen": null,
+   "last_seen": "2026-08-06",
+   "title_raw": "腾讯游戏-多模态世界模型算法研究专家-视频生成方向",
+   "city_raw": "深圳",
+   "salary_raw": "",
+   "requirement_raw": "1.负责世界模型（World Model）相关核心算法的研发与落地，包括但不限于视频生成、视频预测、视频编辑等方向；\n2.探索面向游戏世界场景的新一代视频生成技术，构建具备可交互性、可编辑性、物理一致性和时空一致性的世界模型。 ",
+   "company": "腾讯",
+   "title": "腾讯游戏-多模态世界模型算法研究专家-视频生成方向",
+   "cities": [
+    "深圳"
+   ],
+   "regions": [
+    "大湾区"
+   ],
+   "salary": {
+    "min_k": null,
+    "max_k": null,
+    "months": null,
+    "annual_k_min": null,
+    "annual_k_max": null,
+    "currency": null,
+    "unit": null,
+    "display_unit": null,
+    "confidence": "unknown",
+    "raw": ""
+   },
+   "hire_type": "社招",
+   "experience": {
+    "level": "不限",
+    "education": "不限",
+    "is_fresh_friendly": true
+   },
+   "tags": [
+    "三维重建",
+    "SLAM",
+    "城市AI"
+   ],
+   "tags_primary": "三维重建",
+   "priority": {
+    "tier": 0,
+    "size_tier": 10,
+    "sal_tier": 50,
+    "stars": 4,
+    "match_score": 53
    },
    "apply_text": "投递",
    "notes": ""

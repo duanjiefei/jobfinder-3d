@@ -28,6 +28,10 @@ CARD_SELECTORS = [
 ]
 
 
+NAV_WORDS = ("致辞", "战略", "招聘", "加入我们", "关于", "联系", "人才", "新闻", "首页",
+             "简介", "某", "Copyright", "公司", "团队", "文化", "发展", "福利", "环境")
+
+
 class CompanyOfficialAdapter(BaseAdapter):
     source = "official"
     use_playwright = False  # 个别站点在 fetch_raw 内按需升级
@@ -49,9 +53,9 @@ class CompanyOfficialAdapter(BaseAdapter):
             for a in soup.find_all(tag, sel):
                 title = (a.get("title") or a.get_text(strip=True) or "").strip()
                 href = a.get("href") or ""
-                if not title or len(title) > 60 or len(title) < 4:
+                if not title or len(title) > 60 or len(title) < 6:
                     continue
-                if any(k in title for k in ("登录", "注册", "首页", "关于我们", "Copyright")):
+                if any(w in title for w in NAV_WORDS):
                     continue
                 if not href.startswith("http"):
                     href = urljoin_url(url, href)

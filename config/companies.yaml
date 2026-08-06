@@ -22,6 +22,11 @@ official:
   梅卡曼德: "https://www.mech-mind.com/careers"
   知象光电: "https://hr.revopoint3d.com.cn"
 
+# 腾讯官方招聘 API（公开接口，已实测可用）
+tencent:
+  keywords: ["三维重建", "SLAM", "点云", "NeRF", "3DGS", "GIS", "摄影测量", "视觉SLAM", "世界模型"]
+  cities: []                      # 留空=不限城市；可填 ["深圳","上海","北京"] 等
+
 # 招聘平台关键词搜索（P3，强反爬，需登录态）
 boss:
   keywords: ["三维重建算法", "SLAM算法", "点云算法", "NeRF", "3DGS", "摄影测量", "GIS算法", "视觉SLAM"]

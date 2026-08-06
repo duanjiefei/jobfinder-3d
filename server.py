@@ -31,7 +31,7 @@ STATE = {
     "errors": [],      # 失败源列表
 }
 
-DEFAULT_ADAPTERS = "official,nowcoder"
+DEFAULT_ADAPTERS = "tencent,official,nowcoder"
 
 
 @app.route("/")
