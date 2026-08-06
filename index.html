@@ -68,6 +68,12 @@
   .btn{display:inline-block;background:var(--accent);color:#fff;padding:6px 16px;border-radius:8px;
     text-decoration:none;font-size:13px}
   .btn:hover{opacity:.9}
+  .bookmark{background:#fff;color:#b45309;border:1px solid var(--line);padding:5px 12px;border-radius:8px;
+    font-size:12.5px;cursor:pointer}
+  .bookmark.on{background:#fdf2e3;border-color:#f59e0b}
+  .bookmark:hover{border-color:#f59e0b}
+  .foot-left{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+  #favOnlyBtn{width:100%;margin-top:10px}
   #empty{text-align:center;color:var(--muted);padding:60px 20px;font-size:15px}
   #sentinel{height:1px}
   @media (max-width:900px){
@@ -119,6 +125,7 @@
       <option value="gba">大湾区优先</option>
       <option value="fresh">应届友好优先</option>
     </select>
+    <button id="favOnlyBtn" class="chip">☆ 只看收藏</button>
     <button id="resetBtn">↺ 重置筛选</button>
   </aside>
 
@@ -133,8 +140,15 @@ window.__JOBS_INLINE__ = null;
 const STATE = { data:null, filtered:[], page:0, pageSize:24, sort:'match' };
 const FILTERS = {
   kw:'', cities:new Set(), exps:new Set(), hires:new Set(), tags:new Set(),
-  salMin:0, salMax:100
+  salMin:0, salMax:100, favOnly:false
 };
+
+// ===== 收藏/已投递（localStorage 持久化）=====
+const BM_KEY='jobfinder_favs_v1';
+let FAVS = new Set();
+function loadFavs(){ try{ const v=localStorage.getItem(BM_KEY); if(v) FAVS=new Set(JSON.parse(v)); }catch(e){} }
+function saveFavs(){ try{ localStorage.setItem(BM_KEY, JSON.stringify([...FAVS])); }catch(e){} }
+function toggleFav(id){ FAVS.has(id)?FAVS.delete(id):FAVS.add(id); saveFavs(); }
 
 async function loadData(){
   if (window.__JOBS_INLINE__) return window.__JOBS_INLINE__;
@@ -210,6 +224,8 @@ function passesFilters(j){
   }
   // 标签：OR
   if(FILTERS.tags.size && !j.tags.some(t=>FILTERS.tags.has(t))) return false;
+  // 只看收藏
+  if(FILTERS.favOnly && !FAVS.has(j.id)) return false;
   // 薪资：无数值（未公开）放行；有数值才比较
   const s=j.salary;
   if(s && s.min_k!=null && s.max_k!=null){
@@ -265,6 +281,8 @@ function renderCard(j){
   const reqShort=esc(j.requirement_raw||'无要求描述').slice(0,150);
   const freshBadge=j.experience.is_fresh_friendly?'<span class="fresh">研一可投</span>':'';
   const tierName=['大湾区','国内','海外'][j.priority.tier]||'';
+  const favNow=FAVS.has(j.id);
+  const favBtn='<button class="bookmark'+(favNow?' on':'')+'" data-id="'+esc(j.id)+'">'+(favNow?'★ 已收藏':'☆ 收藏')+'</button>';
   c.innerHTML=
     '<div class="head"><div>'+
       '<h3>'+esc(j.title)+'</h3>'+
@@ -280,7 +298,8 @@ function renderCard(j){
     '<div class="tags">'+tagHtml+'</div>'+
     '<p class="req">'+reqShort+(reqShort.length>=150?'…':'')+'</p>'+
     '<div class="foot">'+
-      '<span class="src">来源：'+esc(j.source)+' · 更新 '+esc((j.last_seen||'').slice(0,10))+'</span>'+
+      '<div class="foot-left">'+favBtn+
+      '<span class="src">来源：'+esc(j.source)+' · 更新 '+esc((j.last_seen||'').slice(0,10))+'</span></div>'+
       (j.source_url?'<a class="btn" href="'+esc(j.source_url)+'" target="_blank" rel="noopener">'+esc(j.apply_text||'投递')+' ↗</a>':'<span></span>')+
     '</div>';
   return c;
@@ -296,6 +315,22 @@ function bindEvents(){
   document.getElementById('kw').addEventListener('input', debounce(applyAndRender,200));
   document.getElementById('sortSel').addEventListener('change', applyAndRender);
   document.getElementById('refreshBtn').addEventListener('click', refreshData);
+  document.getElementById('favOnlyBtn').addEventListener('click', ()=>{
+    FILTERS.favOnly=!FILTERS.favOnly;
+    const b=document.getElementById('favOnlyBtn');
+    b.classList.toggle('on', FILTERS.favOnly);
+    b.textContent = FILTERS.favOnly?'★ 只看收藏':'☆ 只看收藏';
+    applyAndRender();
+  });
+  document.getElementById('results').addEventListener('click', (e)=>{
+    const b=e.target.closest('.bookmark');
+    if(!b) return;
+    const favNow=!FAVS.has(b.dataset.id);
+    toggleFav(b.dataset.id);
+    b.classList.toggle('on', favNow);
+    b.textContent = favNow?'★ 已收藏':'☆ 收藏';
+    if(FILTERS.favOnly && !favNow) applyAndRender();  // 取消收藏后移出"只看收藏"列表
+  });
   document.getElementById('resetBtn').addEventListener('click', ()=>{
     document.getElementById('kw').value='';
     document.querySelectorAll('.chip.on').forEach(c=>c.classList.remove('on'));
@@ -358,6 +393,7 @@ async function refreshData(){
 
 loadData().then(data=>{
   STATE.data=data;
+  loadFavs();
   initFilters(data);
   bindEvents();
   applyAndRender();
