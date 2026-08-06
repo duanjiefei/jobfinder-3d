@@ -89,6 +89,28 @@ jobfinder/
 
 说明：BOSS/猎聘等平台有强反爬（验证码/封IP），官网岗自动抓、平台岗需本地登录态或手动补充；抓取失败的源只告警不阻塞，种子数据始终兜底。
 
+## 更新与自动化上线
+
+仓库已连接 Render，**只要 `git push` 到 main 就会自动重新部署**。
+
+### 一键更新（推荐）
+```bash
+bash deploy.sh "feat: 本次改动说明"
+# 自动：重新生成数据 → commit → push → 等待 Render 构建完成并提示上线
+```
+
+### 手动流程
+```bash
+# 改代码后：
+git add -A && git commit -m "feat: 说明"
+git push origin main        # Render 自动重新构建，约 1-3 分钟上线
+# 验证：https://jobfinder-3d.onrender.com/
+```
+
+### 数据全自动刷新（GitHub Action）
+仓库内 `.github/workflows/refresh.yml` 已配置：**每周一自动**抓取官网/牛客 → 合并进 `jobs.json` → 自动提交 → 自动触发 Render 重部署。
+也可在 GitHub → Actions → 该工作流 → Run workflow 手动触发。
+
 ## 开发/测试
 ```bash
 python -m scripts.build_seed_jobs      # 重新生成种子数据

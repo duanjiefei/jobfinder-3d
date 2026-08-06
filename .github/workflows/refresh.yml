@@ -1,0 +1,30 @@
+name: 定时刷新岗位数据
+# 每周自动跑抓取→合并→提交→触发 Render 重新部署（数据全自动更新，无需手动点刷新）
+on:
+  schedule:
+    - cron: "23 2 * * 1"   # 每周一 02:23 UTC（避开整点，非高峰）
+  workflow_dispatch:        # 也可在 GitHub Actions 页面手动触发
+
+permissions:
+  contents: write
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: 安装依赖
+        run: pip install httpx beautifulsoup4 lxml PyYAML
+      - name: 抓取官网/牛客并合并进 jobs.json
+        run: python -m scripts.fetch_jobs --adapters official,nowcoder
+      - name: 提交更新（若有变化）
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add jobs.json index.bundle.html
+          git diff --cached --quiet && echo "无数据变化，跳过提交" \
+            || git commit -m "chore: 定时刷新岗位数据"
+          git push
